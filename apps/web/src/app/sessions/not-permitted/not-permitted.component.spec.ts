@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { MainLayoutComponent } from './main-layout.component';
+import { NotPermittedComponent } from './not-permitted.component';
 
-describe('MainLayoutComponent', () => {
-  let component: MainLayoutComponent;
-  let fixture: ComponentFixture<MainLayoutComponent>;
+describe('NotPermittedComponent', () => {
+  let component: NotPermittedComponent;
+  let fixture: ComponentFixture<NotPermittedComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainLayoutComponent ]
+      declarations: [ NotPermittedComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainLayoutComponent);
+    fixture = TestBed.createComponent(NotPermittedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

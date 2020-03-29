@@ -6,20 +6,25 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { AppRoutes } from './app.routes';
+import { SessionsModule } from './sessions/sessions.module';
 
 @NgModule({
    declarations: [
-      AppComponent,
+      AppComponent
 
    ],
    imports: [
       BrowserModule,
+      AppRoutes,
       HttpClientModule,
       CoreModule,
       SharedModule,
+      SessionsModule
 
    ],
    providers: [],
+
    bootstrap: [
       AppComponent
    ]
