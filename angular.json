@@ -36,7 +36,7 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/web/src/environments/environment.ts",
+                  "replace": "apps/web/src/environments/environment.dev.ts",
                   "with": "apps/web/src/environments/environment.prod.ts"
                 }
               ],
@@ -151,7 +151,7 @@
               "inspect": false,
               "fileReplacements": [
                 {
-                  "replace": "apps/api/src/environments/environment.ts",
+                  "replace": "apps/api/src/environments/environment.dev.ts",
                   "with": "apps/api/src/environments/environment.prod.ts"
                 }
               ]
