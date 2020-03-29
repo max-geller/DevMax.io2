@@ -21,8 +21,15 @@
             "polyfills": "apps/web/src/polyfills.ts",
             "tsConfig": "apps/web/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/web/src/favicon.ico", "apps/web/src/assets"],
-            "styles": ["apps/web/src/styles.scss"],
+            "assets": [
+              "apps/web/src/favicon.ico",
+              "apps/web/src/assets",
+              "apps/web/src/_redirects"
+            ],
+            "styles": [
+              "libs/styles/devmax-theme.scss",
+              "apps/web/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@devmax/api-interfaces';
+// import { Message } from '@devmax/api-interfaces';
 
 @Component({
   selector: 'devmax-root',
@@ -8,6 +8,6 @@ import { Message } from '@devmax/api-interfaces';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
+//  hello$ = this.http.get<Message>('/api/hello');
   constructor(private http: HttpClient) {}
 }
