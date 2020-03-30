@@ -10,6 +10,10 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     NavbarComponent,
     FooterComponent
+  ],
+  exports: [
+    NavbarComponent,
+    FooterComponent
   ]
 })
 export class NavModule { }
