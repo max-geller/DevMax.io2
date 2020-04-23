@@ -1,24 +1,31 @@
 
 •	# Other
-o	Study Habits
-o	Journaling / Note-Taking
+o	## Study Habits
+o	## Journaling / Note-Taking
 o	
 •	# Engineering
+
 o	## Electrical Engineering
 	Commercial Electrical Design
+
 o	## Telecom Design
 	### Commercial
-•	Networking Basics
-o	Drones / UAS
-	FPV
-	Part 107
+•	#### Networking Basics
+
+o	## Drones / UAS
+	### FPV
+	### Part 107
+
 •	## Construction Estimating
+
 •	## Electrical Estimating
+
 o	### Commercial
 	Accubid Enterprise
 	EstiBase
 o	Residential
 o	Photovoltaic
+
 •	# Software Development
 o	## Git
 o	## Front-End Development
@@ -31,7 +38,9 @@ o	## Data Modeling
 	### NestJS
 o	## State-Management
 	### RxJS
+
 •	# Statistics
+
 •	# Data Visualization
 o	## PowerBI
 •	# Test Prep
