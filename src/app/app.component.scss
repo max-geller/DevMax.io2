@@ -1,9 +1,16 @@
 .wrapper {
     display: flex;
+    margin: 0px;
+    padding: 0px;
     min-height: 100vh;
     min-width: 100vw;
 }
 
 .main-container {
     flex-grow: 1
+}
+
+.mat-card {
+    margin: 10px;
+    min-height: 150px;
 }
