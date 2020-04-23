@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { LessonsRoutingModule } from './lessons-routing.module';
+import { LessonsRoutes } from './lessons.routes';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    LessonsRoutingModule
+    LessonsRoutes
   ]
 })
 export class LessonsModule { }

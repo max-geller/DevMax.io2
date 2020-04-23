@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CoursesRoutes } from './courses.routes.module';
+import { CoursesRoutes } from './courses.routes';
 
 
 @NgModule({

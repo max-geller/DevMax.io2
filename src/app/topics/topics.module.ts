@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { TopicsRoutingModule } from './topics-routing.module';
+import { TopicsRoutes } from './topics.routes';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    TopicsRoutingModule
+    TopicsRoutes
   ]
 })
 export class TopicsModule { }

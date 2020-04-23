@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ArticlesRoutes } from './articles.routes.module';
+import { ArticlesRoutes } from './articles.routes';
 
 
 @NgModule({

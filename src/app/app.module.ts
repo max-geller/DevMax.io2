@@ -8,7 +8,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment.dev';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
@@ -32,7 +32,7 @@ import { TopicsModule } from './topics/topics.module';
     BrowserAnimationsModule,
     SharedModule,
     RouterModule,
-    AppRoutingModule,
+    AppRoutes,
     HttpClientModule,
     NgxSpinnerModule,
     AngularFireModule.initializeApp(environment.firebase),
