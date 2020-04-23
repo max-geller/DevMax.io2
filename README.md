@@ -1,50 +1,53 @@
 
-•	# Other
-o	## Study Habits
-o	## Journaling / Note-Taking
-o	
-•	# Engineering
+# Other
+## Study Habits
+## Journaling / Note-Taking
+	
+# Engineering
 
-o	## Electrical Engineering
-	Commercial Electrical Design
+## Electrical Engineering
+### Commercial Electrical Design
 
-o	## Telecom Design
-	### Commercial
-•	#### Networking Basics
+### Telecom Design
+#### Commercial
+#### Networking Basics
 
-o	## Drones / UAS
-	### FPV
-	### Part 107
+## Drones / UAS
+### FPV
+### Part 107
 
-•	## Construction Estimating
+## Construction Estimating
 
-•	## Electrical Estimating
+## Electrical Estimating
 
-o	### Commercial
-	Accubid Enterprise
-	EstiBase
-o	Residential
-o	Photovoltaic
+### Commercial
+Accubid Enterprise
+EstiBase
+	Residential
+	Photovoltaic
 
-•	# Software Development
-o	## Git
-o	## Front-End Development
-	### Angular
-	### React
-	CSS / SASS
-o	## Data Modeling
-	### Firestore
-	### MongoDB
-	### NestJS
-o	## State-Management
-	### RxJS
+# Software Development
+## Git
+## Front-End Development
+### Angular
+### React
+### CSS / SASS
 
-•	# Statistics
+## Data Modeling
+### Firestore
+### MongoDB
+### NestJS
 
-•	# Data Visualization
-o	## PowerBI
-•	# Test Prep
-o	## RCDD
-o	## FE
-o	## PE
-o	## FAA Part 107
+## State-Management
+### RxJS
+
+# Statistics
+
+# Data Visualization
+## PowerBI
+
+# Test Prep
+## RCDD
+## FE
+## PE
+## FAA Part 107
