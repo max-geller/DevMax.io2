@@ -1,16 +1,14 @@
 @import '~@angular/material/theming';
+@include mat-core();
 
-// App Styles
-@import "scss/layouts/_page-layout.scss";
-@import "scss/layouts/_module-layout.scss";
-@import "scss/theme/_colors.scss";
-@import "scss/theme/_animations.scss";
-@import "scss/theme/_fonts.scss";
-@import "scss/theme/_palette.scss";
-@import "scss/theme/_variables.scss";
-@import "scss/components/_forms.scss";
-@import "scss/components/_badges.scss";
-@import "scss/components/_table.scss";
+// Import App Styles
+@import "layouts/_page.scss";
+@import "layouts/_module.scss";
+@import "theme/_colors.scss";
+@import "theme/_animations.scss";
+@import "theme/_fonts.scss";
+@import "theme/_palette.scss";
+@import "theme/_variables.scss";
 
 
 // Light Theme Text

@@ -1,10 +1,25 @@
 
 <div class="wrapper" fxLayout="column" fxFlex>
-    <mat-toolbar color="primary">DevMax.io Navbar</mat-toolbar>
+    <mat-toolbar color="primary" fxLayout="row">
+        DevMax.io
+        <mat-nav-list fxLayout="row">
+            <mat-list-item>COURSES</mat-list-item>
+            <mat-list-item>LESSONS</mat-list-item>
+            <mat-list-item>TOPICS</mat-list-item>
+            <mat-list-item>ARTICLES</mat-list-item>
+        </mat-nav-list>
+
+    </mat-toolbar>
     <div class="main-container">
-        Here's where the main content goes
-        <router-outlet></router-outlet>
+        <div class="cta-container">
+            Here's where the banners and ads will go
+        </div>
+        <div class="feed-container">
+            Here's where recent videos and articles will go
+        </div>
+        <div class="browse-courses"></div>
+            Here's where you can browse a horizontal slider for courses followed by a grid
     </div>
-    <mat-toolbar color="primary">Footer</mat-toolbar>
+    <mat-toolbar color="primary">San Francisco, CA</mat-toolbar>
 </div>
 
