@@ -96,71 +96,6 @@ $mat-light-theme-background: (background: $light-background,
 
 // Sutro Theme Configuration
 
-body {
-  --primary-color: #13256c;
-  --primary-lighter-color: #b8bed3;
-  --primary-darker-color: #0b164f;
-//  --primary-color: #be7310;
-//  --primary-lighter-color: #b8bed3;
-//  --primary-darker-color: #885411;
-  --text-primary-color: $light-primary-text;
-  --text-primary-lighter-color: $dark-primary-text;
-  --text-primary-darker-color: $light-primary-text;
-}
-
-$mat-primary: (main: #212953,
-  lighter: #b8bed3,
-  darker: #212953,
-  200: #13256c, // For slide toggle,
-  contrast : (main: $light-primary-text,
-    lighter: $dark-primary-text,
-    darker: $light-primary-text,
-  ));
-
-$theme-primary: mat-palette($mat-primary, main, lighter, darker);
-
-body {
-  --accent-color: #ededed;
-  --accent-lighter-color: #fafafa;
-  --accent-darker-color: #e5e5e5;
-  --text-accent-color: $dark-primary-text;
-  --text-accent-lighter-color: $dark-primary-text;
-  --text-accent-darker-color: $dark-primary-text;
-}
-
-$mat-accent: (main: #ededed,
-  lighter: #fafafa,
-  darker: #e5e5e5,
-  200: #ededed, // For slide toggle,
-  contrast : (main: $dark-primary-text,
-    lighter: $dark-primary-text,
-    darker: $dark-primary-text,
-  ));
-$theme-accent: mat-palette($mat-accent, main, lighter, darker);
-
-body {
-  --warn-color: rgb(187, 22, 22);
-  --warn-lighter-color: #dfb6b6;
-  --warn-darker-color: #760707;
-  --text-warn-color: $light-primary-text;
-  --text-warn-lighter-color: $dark-primary-text;
-  --text-warn-darker-color: $light-primary-text;
-}
-
-$mat-warn: (main: rgb(187, 22, 22),
-  lighter: #dfb6b6,
-  darker: #760707,
-  200: rgb(187, 22, 22), // For slide toggle,
-  contrast : (main: $light-primary-text,
-    lighter: $dark-primary-text,
-    darker: $light-primary-text,
-  ));
-
-$theme-warn: mat-palette($mat-warn, main, lighter, darker);
-;
-
-$theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
-$altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 
 // Theme Init
 @include angular-material-theme($theme);
@@ -188,4 +123,3 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 }
 
 html, body { height: 100%;  width: 100%;}
-body { margin: 0;  padding: 0; font-family: Nunito, "Helvetica Neue", sans-serif; }
