@@ -30,7 +30,6 @@ import { CoursesComponent } from './courses/courses.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     TopicsComponent,
     ArticlesComponent,
     LessonsComponent,
@@ -54,7 +53,7 @@ import { CoursesComponent } from './courses/courses.component';
     HomeModule
   ],
   providers: [
-    
+
   ],
   bootstrap: [
     AppComponent
