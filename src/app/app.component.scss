@@ -6,13 +6,16 @@
 .layout-container {
     margin: 0px;
 }
-
+.mat-card {
+    margin: 10px;
+    max-height: 150px;
+}
 .main-container {
     margin: 0px;
     flex-grow: 1
 }
 
-.mat-card {
-    margin: 10px;
-    min-height: 150px;
+.particles.container {
+    display: flex;
+    max-height:100px;
 }
