@@ -15,6 +15,7 @@
 
         <mat-card class="cta-container">
             <div class="particles-container" id="particles-js" fxFlex >
+                <mat-card>Here's the stuff</mat-card>
             </div>
         </mat-card>
         <mat-card class="stat-container">
@@ -28,8 +29,19 @@
                 <mat-chip>React</mat-chip>
             </mat-chip-list>
         </mat-card>
-        <mat-card class="feed-container">
-            Here's where recent videos and articles will go (infinite scroll)
+        <mat-card class="feed-container" fxLayout="row">
+            <mat-card class="feed-item" fxLayout="column" fxFlex>
+                Here's a feed item
+            </mat-card>
+            <mat-card class="feed-item" fxLayout="column" fxFlex>
+                Here's a feed item
+            </mat-card>
+            <mat-card class="feed-item" fxLayout="column" fxFlex>
+                Here's a feed item
+            </mat-card>
+            <mat-card class="feed-item" fxLayout="column" fxFlex>
+                Here's a feed item
+            </mat-card>
         </mat-card>
         <mat-card class="browse-courses">
             Here's where you can browse a horizontal slider for courses followed by a grid
