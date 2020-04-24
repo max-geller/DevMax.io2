@@ -23,7 +23,6 @@ import { LessonsModule } from './lessons/lessons.module';
 import { CoursesModule } from './courses/courses.module';
 import { ArticlesModule } from './articles/articles.module';
 import { TopicsModule } from './topics/topics.module';
-import { ParticlesModule } from 'angular-particle';
 
 @NgModule({
   declarations: [
@@ -48,7 +47,7 @@ import { ParticlesModule } from 'angular-particle';
     CoursesModule,
     ArticlesModule,
     TopicsModule,
-    ParticlesModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
