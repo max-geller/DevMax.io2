@@ -1,3 +1,4 @@
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -22,6 +23,7 @@ import { LessonsModule } from './lessons/lessons.module';
 import { CoursesModule } from './courses/courses.module';
 import { ArticlesModule } from './articles/articles.module';
 import { TopicsModule } from './topics/topics.module';
+import { ParticlesModule } from 'angular-particle';
 
 @NgModule({
   declarations: [
@@ -41,11 +43,12 @@ import { TopicsModule } from './topics/topics.module';
     AngularFireStorageModule,
     environment.production ?
       HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 100 }) : [],
-      AgmCoreModule.forRoot({ apiKey: 'AIzaSyCYTxkREIgB7sNozUDIhlVNNDwXg9SS3wk' }),
-      LessonsModule,
-      CoursesModule,
-      ArticlesModule,
-      TopicsModule,
+    AgmCoreModule.forRoot({ apiKey: 'AIzaSyCYTxkREIgB7sNozUDIhlVNNDwXg9SS3wk' }),
+    LessonsModule,
+    CoursesModule,
+    ArticlesModule,
+    TopicsModule,
+    ParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

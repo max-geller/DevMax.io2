@@ -2,11 +2,13 @@
     display: flex;
     margin: 0px;
     padding: 0px;
-    min-height: 100vh;
-    min-width: 100vw;
+}
+.layout-container {
+    margin: 0px;
 }
 
 .main-container {
+    margin: 0px;
     flex-grow: 1
 }
 
