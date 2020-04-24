@@ -1,0 +1,13 @@
+.page-container {
+    flex-grow: 1;
+}
+.mat-card {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    min-height: 150px;
+    background: transparent;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+      -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+    border-radius: 12px;
+}

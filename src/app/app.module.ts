@@ -15,6 +15,7 @@ import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+import { HomeModule } from './home/home.module';
 import { AgmCoreModule } from '@agm/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { InMemoryDataService } from './shared/in-memory-db/inmemory-db.service';
@@ -24,6 +25,7 @@ import { TopicsComponent } from './topics/topics.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { LessonsComponent } from './lessons/lessons.component';
 import { CoursesComponent } from './courses/courses.component';
+
 
 @NgModule({
   declarations: [
@@ -49,9 +51,13 @@ import { CoursesComponent } from './courses/courses.component';
     environment.production ?
       HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 100 }) : [],
     AgmCoreModule.forRoot({ apiKey: 'AIzaSyCYTxkREIgB7sNozUDIhlVNNDwXg9SS3wk' }),
+    HomeModule
+  ],
+  providers: [
     
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
