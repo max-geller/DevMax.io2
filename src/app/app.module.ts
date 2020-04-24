@@ -19,14 +19,20 @@ import { AgmCoreModule } from '@agm/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { InMemoryDataService } from './shared/in-memory-db/inmemory-db.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { LessonsModule } from './lessons/lessons.module';
-import { CoursesModule } from './courses/courses.module';
-import { ArticlesModule } from './articles/articles.module';
-import { TopicsModule } from './topics/topics.module';
+import { HomeComponent } from './home/home.component';
+import { TopicsComponent } from './topics/topics.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { LessonsComponent } from './lessons/lessons.component';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    TopicsComponent,
+    ArticlesComponent,
+    LessonsComponent,
+    CoursesComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,10 +49,6 @@ import { TopicsModule } from './topics/topics.module';
     environment.production ?
       HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 100 }) : [],
     AgmCoreModule.forRoot({ apiKey: 'AIzaSyCYTxkREIgB7sNozUDIhlVNNDwXg9SS3wk' }),
-    LessonsModule,
-    CoursesModule,
-    ArticlesModule,
-    TopicsModule,
     
   ],
   providers: [],
