@@ -1,13 +1,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDdw90Dvk5VSQ3-LFCmFqvxtauNHBZYGvc",
-    authDomain: "hci-dev.firebaseapp.com",
-    databaseURL: "https://hci-dev.firebaseio.com",
-    projectId: "hci-dev",
-    storageBucket: "hci-dev.appspot.com",
-    messagingSenderId: "176996343700",
-    appId: "1:176996343700:web:a9c387e5b2f3f675e37981",
-    measurementId: "G-V8T4ZD35JD"
+    apiKey: "AIzaSyA3_ayvL1V4fD3-KGWKEex2bb3k6hDP0vk",
+    authDomain: "devmax-66f54.firebaseapp.com",
+    databaseURL: "https://devmax-66f54.firebaseio.com",
+    projectId: "devmax-66f54",
+    storageBucket: "devmax-66f54.appspot.com",
+    messagingSenderId: "484809338847",
+    appId: "1:484809338847:web:8bcb94949789eaa93e9e6a",
+    measurementId: "G-PMFVNWPF4E"
   }
 };
