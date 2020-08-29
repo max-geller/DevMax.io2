@@ -1,10 +1,9 @@
 .footer-nav {
-  background-image: linear-gradient(
-    135deg,
-    rgb(24, 42, 115) 0%,
-    rgb(33, 138, 174) 69%,
-    rgb(32, 167, 172) 89%
-  );
+  background-image: linear-gradient(135deg,
+      rgb(24, 42, 115) 0%,
+      rgb(33, 138, 174) 69%,
+      rgb(32, 167, 172) 89%);
+
   mat-list-item {
     color: white !important;
   }
@@ -27,20 +26,20 @@
     font-weight: 100;
     min-width: 250px;
   }
+}
 
-  .copyright-container {
-    height: 28px;
-    padding: 5px;
-    background-color: rgb(29, 29, 29);
+.copyright-container {
+  height: 28px;
+  padding: 5px;
+  background-color: rgb(29, 29, 29);
 
-    h5 {
-      color: rgb(255, 255, 255);
-      margin: 0;
-      padding: 0;
-    }
+  h5 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
   }
+}
 
-  p {
-    margin-top: 0px;
-  }
+p {
+  margin-top: 0px;
 }
