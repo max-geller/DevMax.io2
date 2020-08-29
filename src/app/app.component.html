@@ -1,5 +1,14 @@
 <div class="wrapper" fxLayout="column" fxFlex>
   <div class="app-navbar" fxLayout="row">
+    <button
+      mat-icon-button
+      (click)="sidenav.toggle()"
+      fxShow="true"
+      fxHide
+      fxShow.lt-md
+    >
+      <i class="fal fa-bars" style="margin-top: 10px;"></i>
+    </button>
     <mat-nav-list fxLayout="row" style="color: white;">
       <mat-list-item routerLink="/home">HOME</mat-list-item>
       <mat-list-item routerLink="/courses">COURSES</mat-list-item>
@@ -8,9 +17,18 @@
       <mat-list-item routerLink="/articles">ARTICLES</mat-list-item>
     </mat-nav-list>
   </div>
-  <div class="main-container">
-    <router-outlet></router-outlet>
-  </div>
+
+
+  <mat-sidenav-container fxLayout="column" style="flex-grow: 1;">
+    <mat-sidenav class="primary-sidenav" #sidenav mode="side">
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="main-container" fxLayout="column" style="flex-grow: 1;">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 
   <div class="app-navbar" fxLayout="row" style="color: white;">
     <h3>San Francisco, CA</h3>

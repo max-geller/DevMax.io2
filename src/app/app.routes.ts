@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { TopicsComponent } from './topics/topics.component';
-import { LessonsComponent } from './lessons/lessons.component';
-import { CoursesComponent } from './courses/courses.component';
-import { ArticlesComponent } from './articles/articles.component';
+import { TopicsComponent } from './features/topics/topics.component';
+import { LessonsComponent } from './features/lessons/lessons.component';
+import { CoursesComponent } from './features/courses/courses.component';
+import { ArticlesComponent } from './features/articles/articles.component';
 
 
 const routes: Routes = [

@@ -1,4 +1,3 @@
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -20,11 +19,11 @@ import { AgmCoreModule } from '@agm/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { InMemoryDataService } from './shared/in-memory-db/inmemory-db.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { HomeComponent } from './home/home.component';
-import { TopicsComponent } from './topics/topics.component';
-import { ArticlesComponent } from './articles/articles.component';
-import { LessonsComponent } from './lessons/lessons.component';
-import { CoursesComponent } from './courses/courses.component';
+import { TopicsComponent } from './features/topics/topics.component';
+import { ArticlesComponent } from './features/articles/articles.component';
+import { LessonsComponent } from './features/lessons/lessons.component';
+import { CoursesComponent } from './features/courses/courses.component';
+import { AuthService } from './core/services/auth.service';
 
 
 @NgModule({
@@ -53,7 +52,7 @@ import { CoursesComponent } from './courses/courses.component';
     HomeModule
   ],
   providers: [
-
+    AuthService
   ],
   bootstrap: [
     AppComponent
