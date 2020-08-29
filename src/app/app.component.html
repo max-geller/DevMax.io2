@@ -1,5 +1,4 @@
-<div class="wrapper" fxLayout="column" fxFlex>
-  <app-navbar></app-navbar>
+<div class="wrapper" fxLayout="column">
   <div class="app-navbar" fxLayout="row">
     <button
       mat-icon-button
@@ -10,28 +9,32 @@
     >
       <i class="fal fa-bars" style="margin-top: 10px;"></i>
     </button>
-    <mat-nav-list fxLayout="row" style="color: white;">
-      <mat-list-item routerLink="/home">HOME</mat-list-item>
-      <mat-list-item routerLink="/courses">COURSES</mat-list-item>
-      <mat-list-item routerLink="/lessons">LESSONS</mat-list-item>
-      <mat-list-item routerLink="/topics">TOPICS</mat-list-item>
-      <mat-list-item routerLink="/articles">ARTICLES</mat-list-item>
+    <mat-nav-list fxLayout="row" style="color: white; font-size: 12px;">
+      <mat-list-item routerLink="/home" style="font-size: 12px !important;">
+        HOME
+      </mat-list-item>
+      <mat-list-item routerLink="/courses" style="font-size: 12px !important;">
+        COURSES
+      </mat-list-item>
+      <mat-list-item routerLink="/lessons" style="font-size: 12px !important;">
+        LESSONS
+      </mat-list-item>
+      <mat-list-item routerLink="/topics" style="font-size: 12px !important;">
+        TOPICS
+      </mat-list-item>
+      <mat-list-item routerLink="/articles" style="font-size: 12px !important;">
+        ARTICLES
+      </mat-list-item>
     </mat-nav-list>
   </div>
 
-
   <mat-sidenav-container fxLayout="column" style="flex-grow: 1;">
-    <mat-sidenav class="primary-sidenav" #sidenav mode="side">
-
-    </mat-sidenav>
+    <mat-sidenav class="primary-sidenav" #sidenav mode="side"> </mat-sidenav>
     <mat-sidenav-content>
       <div class="main-container" fxLayout="column" style="flex-grow: 1;">
         <router-outlet></router-outlet>
+        <app-footer></app-footer>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
-  <div class="app-navbar" fxLayout="row" style="color: white;">
-    <h3>San Francisco, CA</h3>
-  </div>
 </div>

@@ -1,1 +1,67 @@
-<p>footer works!</p>
+<div class="footer-nav" style="min-height: 320px;" fxLayout="column wrap" fxLayoutAlign="start start">
+
+    <div class="footer-column" fxLayoutAlign="start start">
+      <div fxLayout="row">
+        <mat-nav-list style="margin-left: 20px; padding: 0px;top:0">
+          <h5 style="font-size: 14px;margin-left: 15px;font-weight: bolder;">PRODUCT</h5>
+          <mat-list-item routerLink="/solutions" routerLinkActive="active">Solutions</mat-list-item>
+          <mat-list-item routerLink="/features" routerLinkActive="active">Features</mat-list-item>
+          <mat-list-item routerLink="/pricing" routerLinkActive="active">Pricing</mat-list-item>
+          <mat-list-item routerLink="/enterprise" routerLinkActive="active">Enterprise</mat-list-item>
+          <mat-list-item routerLink="/demo" routerLinkActive="active">Request Demo</mat-list-item>
+  
+        </mat-nav-list>
+  
+        <mat-nav-list style="margin-left: 20px; padding: 0px;top:0">
+          <h5 style="font-size: 14px;margin-left: 15px;font-weight: bolder;">COMPANY</h5>
+          <mat-list-item routerLink="/about" routerLinkActive="active">About</mat-list-item>
+          <mat-list-item routerLink="/news" routerLinkActive="active">News</mat-list-item>
+          <mat-list-item routerLink="/careers" routerLinkActive="active">Careers</mat-list-item>
+          <mat-list-item onClick="window.open('//developers.estibase.com')">Developers</mat-list-item>
+          <mat-list-item onClick="window.open('//investors.estibase.com')">Investors</mat-list-item>
+        </mat-nav-list>
+  
+        <mat-nav-list style="margin-left: 20px; padding: 0px;top:0">
+          <h5 style="font-size: 14px;margin-left: 15px;font-weight: bolder;">RESOURCES</h5>
+          <mat-list-item onClick="window.open('//learning.estibase.com')">Learning Center</mat-list-item>
+          <mat-list-item onClick="window.open('//support.estibase.com')">Support Portal</mat-list-item>
+          <mat-list-item onClick="window.open('//docs.estibase.com')">Documentation </mat-list-item>
+          <mat-list-item routerLink="/releases" routerLinkActive="active">Release Notes</mat-list-item>
+          <mat-list-item routerLink="/contact" routerLinkActive="active">Contact Us</mat-list-item>
+        </mat-nav-list>
+  
+        <div style="margin-left: 60px;padding-top: 7px;" fxShow fxHide.lt-md>
+          <p>Sutro Analytics, LLC</p>
+          <p>San Francisco, CA</p>
+          <a href="mailto:success@estibase.com" style="color: white; text-decoration-line: none;">
+            <p>success@estibase.com</p>
+          </a>
+          <p>(415) 684-1900</p>
+        </div>
+  
+        <div style="margin-left: 60px;padding-top: 12px;" fxShow fxHide.lt-md>
+          <div fxLayout="row">
+            <i onClick="window.open('//www.facebook.com/estibase')" class="fab fa-facebook fa-2x"
+              style="color: white;cursor: pointer;"></i>
+            <div class="icon-span"></div>
+            <i onClick="window.open('//www.twitter.com/estibase')" class="fab fa-twitter fa-2x"
+              style="color: white;cursor: pointer;"></i>
+            <div class="icon-span"></div>
+            <i onClick="window.open('//www.instagram.com/estibase')" class="fab fa-instagram fa-2x"
+              style="color: white;cursor: pointer;"></i>
+            <div class="icon-span"></div>
+            <i onClick="window.open('//www.linkedin.com/estibase')" class="fab fa-linkedin fa-2x"
+              style="color: white;cursor: pointer;"></i>
+            <div class="icon-span"></div>
+            <i onClick="window.open('//estibase.slack.com/')" class="fab fa-slack-hash fa-2x"
+              style="color: white;cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright-container" fxLayoutAlign="start center">
+    <h5 style="font-weight: lighter;font-size: x-small;"> © 2020 Sutro Analytics, LLC. All Rights Reserved.</h5>
+  </div>
+  
