@@ -1,32 +1,36 @@
 <div class="wrapper" fxLayout="column" style="width: 100%;overflow:hidden;">
-  <div class="app-navbar" fxLayout="row" fxLayoutAlign="end center" style="padding-left: 20px;padding-right:20px;">
-    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide fxShow.lt-sm>
-      <i class="fal fa-bars" style="color:white;margin-top:6px;"></i>
-    </button>
-
-    <mat-nav-list fxLayout="row" style="color: white; font-size: 12px;" fxShow="true" fxShow fxHide.lt-sm>
-      <mat-list-item routerLink="/home" style="font-size: 12px !important;">
-        HOME
-      </mat-list-item>
-      <mat-list-item routerLink="/courses" style="font-size: 12px !important;">
-        COURSES
-      </mat-list-item>
-      <mat-list-item routerLink="/lessons" style="font-size: 12px !important;">
-        GUIDES
-      </mat-list-item>
-      <mat-list-item routerLink="/topics" style="font-size: 12px !important;">
-        TOPICS
-      </mat-list-item>
-      <mat-list-item routerLink="/articles" style="font-size: 12px !important;">
-        ARTICLES
-      </mat-list-item>
-    </mat-nav-list>
+  <div class="app-navbar" fxLayout="row" style="padding-left: 20px;padding-right:20px;">
+    <div fxLayout="column" fxLayoutAlign="center start" fxFlex>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide fxShow.lt-sm>
+        <i class="fal fa-bars" style="color:white;margin-top:6px;"></i>
+      </button>
+      <mat-nav-list fxLayout="row" style="color: white; font-size: 12px;" fxShow="true" fxShow fxHide.lt-sm>
+        <mat-list-item routerLink="/home" style="font-size: 12px !important;">
+          HOME
+        </mat-list-item>
+        <mat-list-item routerLink="/courses" style="font-size: 12px !important;">
+          COURSES
+        </mat-list-item>
+        <mat-list-item routerLink="/lessons" style="font-size: 12px !important;">
+          GUIDES
+        </mat-list-item>
+        <mat-list-item routerLink="/topics" style="font-size: 12px !important;">
+          TOPICS
+        </mat-list-item>
+        <mat-list-item routerLink="/articles" style="font-size: 12px !important;">
+          ARTICLES
+        </mat-list-item>
+      </mat-nav-list>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center end" fxFlex>
+      <app-icon-menu></app-icon-menu>
+    </div>
   </div>
 
 
   <mat-sidenav-container fxLayout="column" style="flex-grow: 1;max-width: 100vw;">
     <mat-sidenav class="primary-sidenav" #sidenav mode="side"> </mat-sidenav>
-    <mat-sidenav-content >
+    <mat-sidenav-content>
       <div class="main-container" fxLayout="column" style="flex-grow: 1;width: 100vw;">
         <ngx-spinner size="medium" color="#FFFFFF" type="line-scale" [fullScreen]="false">
           <p style="color: white;">LOADING...</p>

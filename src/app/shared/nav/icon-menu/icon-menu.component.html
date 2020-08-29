@@ -1,1 +1,60 @@
-<p>icon-menu works!</p>
+<div class="icon-menu" fxLayout="column" fxLayoutAlign="end center">
+  <mat-nav-list>
+
+    <button mat-icon-button (click)="toggleSearch()">
+      <i class="fal fa-search"></i>
+    </button>
+
+    <button mat-icon-button [matMenuTriggerFor]="tenantMenu">
+      <i class="fal fa-heart"></i>
+    </button>
+
+
+    <button mat-icon-button [matMenuTriggerFor]="notificationsMenu">
+      <i class="fal fa-bell"></i><span class="icon-badge">8</span>
+    </button>
+
+    <button mat-icon-button [matMenuTriggerFor]="tasksMenu">
+      <i class="fal fa-check"></i><span class="icon-badge">11</span>
+    </button>
+
+    <button mat-icon-button [matMenuTriggerFor]="teamMenu">
+      <img class="team-avatar"
+        src="https://firebasestorage.googleapis.com/v0/b/estibase-dev.appspot.com/o/people%2Fcat.jpg?alt=media&token=11b557b7-2962-4361-98aa-a73d7e5377d8"
+        min-width="36px" height="36px">
+    </button>
+  </mat-nav-list>
+</div>
+
+<mat-menu #teamMenu="matMenu" xPosition="before">
+  <button mat-menu-item routerLink="/team/profile">
+    <i class="fal fa-user"></i>&nbsp; &nbsp; Profile</button>
+  <button mat-menu-item (click)="openSlack()">
+    <i class="fab fa-slack-hash"></i>&nbsp; &nbsp; Slack Channel</button>
+  <button mat-menu-item (click)="openDocumentation()">
+    <i class="fal fa-books"></i>&nbsp; &nbsp; Documentation</button>
+  <button mat-menu-item (click)="signOut()">
+    <i class="fal fa-sign-out"></i>&nbsp; &nbsp; Logout</button>
+</mat-menu>
+
+<mat-menu #tenantMenu="matMenu" xPosition="before">
+  <button mat-menu-item routerLink="tenants/billing" routerLinkActive="active" class="pointer">
+    <i class="far fa-users"></i>&nbsp; &nbsp; Manage Users</button>
+  <button mat-menu-item routerLink="tenants/teams" routerLinkActive="active" class="pointer">
+    <i class="far fa-credit-card"></i>&nbsp; &nbsp; Subscriptions</button>
+  <button mat-menu-item routerLink="tenants/settings" routerLinkActive="active" class="pointer">
+    <i class="far fa-cogs"></i>&nbsp; &nbsp; Tenant Settings</button>
+  <button mat-menu-item routerLink="tenants/billing" routerLinkActive="active" class="pointer">
+    <i class="far fa-credit-card"></i>&nbsp; &nbsp; Payments & Billing</button>
+
+
+</mat-menu>
+
+
+<mat-menu #notificationsMenu="matMenu" xPosition="before">
+
+</mat-menu>
+
+<mat-menu #tasksMenu="matMenu" xPosition="before">
+
+</mat-menu>
