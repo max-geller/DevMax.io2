@@ -13,6 +13,8 @@ import { NavbarComponent } from './nav/navbar/navbar.component';
 import { FooterComponent } from './nav/footer/footer.component';
 import { IconMenuComponent } from './nav/icon-menu/icon-menu.component';
 import { SidenavComponent } from './nav/sidenav/sidenav.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   imports: [
@@ -26,6 +28,8 @@ import { SidenavComponent } from './nav/sidenav/sidenav.component';
     GoogleChartsModule,
     ToastrModule,
     NgbModule,
+    NgxPageScrollCoreModule.forRoot({ duration: 1200 }),
+    NgxPageScrollModule
   ],
   declarations: [
 ],
@@ -38,6 +42,8 @@ import { SidenavComponent } from './nav/sidenav/sidenav.component';
     GridsterModule,
     NgxEchartsModule,
     GoogleChartsModule,
+    NgxPageScrollCoreModule,
+    NgxPageScrollModule,
     ToastrModule,
     NgbModule,
   ]

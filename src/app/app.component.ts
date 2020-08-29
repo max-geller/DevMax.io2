@@ -1,24 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './core/services/auth.service';
-
-declare var particlesJS: any;
-
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
+  constructor(
+    public authService: AuthService,
+    private spinner: NgxSpinnerService) { }
+
+  ngOnInit() {
+    this.spinner.show();
+    setTimeout(() => { this.spinner.hide(); }, 2000);
+  }
 
   get isAuthenticated(): boolean {
     return this.authService.isAuthenticated;
   }
 
-  titles: any[];
-
-  constructor(
-    public authService: AuthService) { }
+  showSpinner() {
+    this.spinner.show();
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 3000);
+  }
 }
 
 

@@ -1,6 +1,6 @@
-<div class="wrapper" fxLayout="column">
+<div class="wrapper" fxLayout="column" style="width: 100%;overflow:hidden;">
   <div class="app-navbar" fxLayout="row">
-    <button
+        <button
       mat-icon-button
       (click)="sidenav.toggle()"
       fxShow="true"
@@ -17,7 +17,7 @@
         COURSES
       </mat-list-item>
       <mat-list-item routerLink="/lessons" style="font-size: 12px !important;">
-        LESSONS
+        GUIDES
       </mat-list-item>
       <mat-list-item routerLink="/topics" style="font-size: 12px !important;">
         TOPICS
@@ -27,11 +27,15 @@
       </mat-list-item>
     </mat-nav-list>
   </div>
+    
 
   <mat-sidenav-container fxLayout="column" style="flex-grow: 1;">
     <mat-sidenav class="primary-sidenav" #sidenav mode="side"> </mat-sidenav>
     <mat-sidenav-content>
       <div class="main-container" fxLayout="column" style="flex-grow: 1;">
+        <ngx-spinner size="medium" color="#FFFFFF"  type="line-scale" [fullScreen]="false">
+          <p style="color: white;">LOADING...</p>
+        </ngx-spinner>
         <router-outlet></router-outlet>
         <app-footer></app-footer>
       </div>

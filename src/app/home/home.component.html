@@ -1,25 +1,38 @@
-<div class="page-wrapper">
-    <mat-card class="cta-container">
-        <app-cta></app-cta>
-    </mat-card>
-
-    <mat-card class="stat-container">
-        <app-stats></app-stats>
-    </mat-card>
-
-    <mat-card class="tag-container">
-        <app-browse-tags></app-browse-tags>
-    </mat-card>
-
-    <mat-card class="feed-container" fxLayout="row">
-        <app-feed></app-feed>
-    </mat-card>
-
-    <mat-card class="browse-courses">
-        <app-browse-courses></app-browse-courses>
-    </mat-card>
-
-    <mat-card class="review-container">
-        <app-reviews></app-reviews>
-    </mat-card>
+<div id="home"></div>
+<div class="banner-container" fxLayoutAlign="center center">
+  <div class="banner-text" id="home">
+    <h1>WELCOME TO DATA-DRIVEN COST CONSULTING</h1>
+    <h2>
+      San Francisco's LBE Partner for MEP Systems Consulting & Construction Cost
+      Analytics
+    </h2>
+    <div class="cta-actions">
+      <button
+        mat-stroked-button
+        pageScroll
+        [pageScrollOffset]="80"
+        [pageScrollEasing]="myEasing"
+        href="#cta"
+        routerLinkActive
+      >
+        Become a Pro Member
+      </button>
+      <button
+        mat-stroked-button
+        pageScroll
+        [pageScrollOffset]="80"
+        [pageScrollEasing]="myEasing"
+        href="#browse-courses"
+      >
+        👋 Browse Courses
+      </button>
+    </div>
+  </div>
 </div>
+
+<app-stats id="stats"></app-stats>
+<app-browse-tags id="browse-tags"></app-browse-tags>
+<app-feed id="feed"></app-feed>
+<app-browse-courses id="browse-courses"></app-browse-courses>
+<app-reviews id="reviews"></app-reviews>
+<app-cta id="cta"></app-cta>

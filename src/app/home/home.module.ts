@@ -9,6 +9,7 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
 import { StatsComponent } from './components/stats/stats.component';
 import { CtaComponent } from './components/cta/cta.component';
 import { HomeComponent } from './home.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
       declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home.component';
         BrowseCoursesComponent,
         ReviewsComponent,
         StatsComponent,
-        CtaComponent
+        CtaComponent,
+        BannerComponent
     ],
     imports: [
         CommonModule,

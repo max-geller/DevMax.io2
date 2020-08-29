@@ -1,0 +1,67 @@
+.banner-container {
+    margin-top: -10px;
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://i.ytimg.com/vi/VJxNv2m7qns/maxresdefault.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+    h1 {
+      font-size: 4.5em;
+      font-weight: 800;
+      letter-spacing: .2em;
+      line-height: 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.25em;
+      line-height: 1.5em;
+    }
+  }
+  
+  .cta-actions {
+    margin-top: 50px;
+  }
+  
+  .banner-text {
+    padding: 100px;
+    text-align: center;
+    color: white;
+  
+    h2 {
+      font-weight: lighter;
+    }
+  }
+  
+  .mat-stroked-button {
+    padding: 0 1.15em;
+    border-color: white;
+    margin: 0 1.25em;
+    min-width: 3em;
+    line-height: 36.4px
+  }
+  .mat-stroked-button {
+    margin: 15px;
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .banner-container {
+      min-width: 100vw;
+  
+      h1 {
+        font-size: 2.5em;
+        font-weight: 800;
+        letter-spacing: .2em;
+        line-height: 1.3em;
+      }
+  
+      h2 {
+        font-size: 1.25em;
+        line-height: 1.5em;
+        font-weight: lighter;
+      }
+    }
+  }
+  
