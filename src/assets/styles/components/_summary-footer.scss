@@ -1,0 +1,20 @@
+.summary-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  max-height: 25px;
+  z-index: 200;
+  background: #CFD8DC !important;
+
+  h5 {
+    color: #212121;
+    font-size: smaller;
+  }
+}
+
+.summary-footer-container {
+  width: 100vw;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 50% 50%;
+}

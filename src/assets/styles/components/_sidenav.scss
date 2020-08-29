@@ -1,0 +1,31 @@
+.primary-sidenav {
+  min-width: 275px;
+
+  .mat-expansion-panel {
+    background: transparent;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+      -8px -8px 18px 0 rgba(244, 245, 245, 0.55) !important;
+    border-radius: 12px;
+  }
+
+  .mat-nav-list {
+    color: white;
+    overflow: hidden;
+  }
+
+  .mat-list-item {
+    display: flex;
+    font-size: small;
+    max-height: 35px;
+    overflow: hidden;
+  }
+
+}
+
+
+@media screen and (max-width: 600px){
+  .primary-sidenav {
+    min-width: 100vw
+
+  }
+}

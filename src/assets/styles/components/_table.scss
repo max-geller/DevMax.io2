@@ -1,0 +1,16 @@
+.mat-row:hover {
+  background-color: #CFD8DC;
+  cursor: pointer;
+}
+
+.mat-column-edit {
+  flex: 0 0 5%;
+}
+.mat-column-delete {
+  flex: 0 0 5%;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}

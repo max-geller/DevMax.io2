@@ -1,0 +1,31 @@
+.sessions-layout {
+  display: flex;
+  width: 100vw;
+
+  .slide-area {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+  }
+
+
+  .list-container {
+    text-align: center;
+  }
+
+  mat-nav-list {
+    width: 100%;
+
+  }
+
+  mat-list-item {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .login-area {
+    width: 100%;
+  }
+}

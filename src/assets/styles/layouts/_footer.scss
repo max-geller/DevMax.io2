@@ -1,0 +1,19 @@
+.footer-container {
+  width: 100vw;
+
+  .mat-toolbar.mat-primary {
+    background: #757575;
+    color: #fff;
+  }
+}
+
+.footer-toolbar {
+  max-height: 1.2em;
+  margin: 0px;
+  padding: 0px;
+
+  p {
+    font-size: x-small;
+    margin: 0px;
+  }
+}

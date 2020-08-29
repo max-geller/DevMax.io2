@@ -1,0 +1,18 @@
+<div class="wrapper" fxLayout="column" fxFlex>
+  <div class="app-navbar" fxLayout="row">
+    <mat-nav-list fxLayout="row" style="color: white;">
+      <mat-list-item routerLink="/home">HOME</mat-list-item>
+      <mat-list-item routerLink="/courses">COURSES</mat-list-item>
+      <mat-list-item routerLink="/lessons">LESSONS</mat-list-item>
+      <mat-list-item routerLink="/topics">TOPICS</mat-list-item>
+      <mat-list-item routerLink="/articles">ARTICLES</mat-list-item>
+    </mat-nav-list>
+  </div>
+  <div class="main-container">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="app-navbar" fxLayout="row" style="color: white;">
+    <h3>San Francisco, CA</h3>
+  </div>
+</div>

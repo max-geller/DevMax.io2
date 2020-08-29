@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Nunito';
+}
+
+h1 {
+  font-size: 30px !important;
+}
+
+p,
+a,
+li {
+  font-family: 'Lato';
+}
+
+mat-card-title {
+  font-family: 'Lato';
+}
+
+mat-list-item-content {
+  font-family: 'Lato'
+}
+

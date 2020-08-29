@@ -1,0 +1,12 @@
+mat-accordion {
+  .mat-expansion-panel {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: transparent;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+      -8px -8px 18px 0 rgba(244, 245, 245, 0.55) !important;
+    border-radius: 12px;
+
+  }
+}

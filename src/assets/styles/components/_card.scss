@@ -1,0 +1,25 @@
+.page-layout {
+  .mat-card {
+    background: white;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+      -8px -8px 18px 0 rgba(244, 245, 245, 0.55) !important;
+    border-radius: 12px;
+    padding: 20px;
+    .mat-card-title {
+      font-size: small;
+      font-weight: bolder;
+    }
+    .mat-card-content {
+      p {
+        font-size: 10px;
+        margin: 0px;
+      }
+    }
+  }
+  
+  .mat-card:hover {
+    box-shadow: 1.5px 5px 5px 5px rgba(22, 22, 22, 0.171) !important;
+  }
+
+
+}

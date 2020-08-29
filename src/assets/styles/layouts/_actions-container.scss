@@ -1,0 +1,13 @@
+.actions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 60px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .action-button {
+    grid-row: span 1 / auto;
+    grid-column: span 1 / auto;
+  }
+}

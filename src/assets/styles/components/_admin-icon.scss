@@ -1,0 +1,15 @@
+.admin-icon {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  background-color: rgb(63, 63, 63);
+  border-radius: 50%;
+  bottom: 5%;
+  right: 5%;
+  z-index: 999;
+
+  .mat-icon-button:hover {
+    transform: rotate(180deg);
+    transition-duration: 1s;
+  }
+}

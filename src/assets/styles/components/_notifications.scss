@@ -1,0 +1,18 @@
+.notifications-container {
+  max-width: 350px;
+  background-color: white;
+  z-index: 100;
+
+  .mat-menu {
+    width: 355px;
+  }
+
+  .mat-cell {
+    font-size: 10px;
+    max-height: 15px;
+  }
+
+  .mat-row {
+    max-height: 15px;
+  }
+}
