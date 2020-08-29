@@ -3,35 +3,34 @@
   <div class="banner-text" id="home">
     <h1>WEB DEVELOPMENT TUTORIALS & COURSES</h1>
     <h2>
-     Learn Modern Engineering & Technology with DevMax.io
+      Learn Modern Engineering & Technology with DevMax.io
     </h2>
     <div class="cta-actions">
-      <button
-        mat-stroked-button
-        pageScroll
-        [pageScrollOffset]="80"
-        [pageScrollEasing]="myEasing"
-        href="#cta"
-        routerLinkActive
-      >
+      <button mat-stroked-button pageScroll [pageScrollOffset]="80" [pageScrollEasing]="myEasing" href="#cta"
+        routerLinkActive>
         Become a Pro Member
       </button>
-      <button
-        mat-stroked-button
-        pageScroll
-        [pageScrollOffset]="80"
-        [pageScrollEasing]="myEasing"
-        href="#browse-courses"
-      >
+      <button mat-stroked-button pageScroll [pageScrollOffset]="80" [pageScrollEasing]="myEasing"
+        href="#browse-courses">
         👋 Browse Courses
       </button>
     </div>
   </div>
 </div>
+<div id="stats"></div>
+<app-stats></app-stats>
 
-<app-stats id="stats"></app-stats>
-<app-browse-tags id="browse-tags"></app-browse-tags>
-<app-feed id="feed"></app-feed>
-<app-browse-courses id="browse-courses"></app-browse-courses>
-<app-reviews id="reviews"></app-reviews>
-<app-cta id="cta"></app-cta>
+<div id="browse-tags"></div>
+<app-browse-tags></app-browse-tags>
+
+<div id="feed"></div>
+<app-feed></app-feed>
+
+<div id="browse-courses"></div>
+<app-browse-courses></app-browse-courses>
+
+<div id="reviews"></div>
+<app-reviews></app-reviews>
+
+<div id="cta"></div>
+<app-cta></app-cta>

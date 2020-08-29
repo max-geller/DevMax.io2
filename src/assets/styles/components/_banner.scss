@@ -1,67 +1,65 @@
 .banner-container {
-    margin-top: -10px;
-    height: 450px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://firebasestorage.googleapis.com/v0/b/devmax-66f54.appspot.com/o/AdobeStock_193242151.jpeg?alt=media&token=f0d8e201-4faa-464a-b193-3230b4dc1240");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://firebasestorage.googleapis.com/v0/b/devmax-66f54.appspot.com/o/AdobeStock_297078136.jpeg?alt=media&token=2599e16b-4e93-4552-9512-53a99b9772d6");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  h1 {
+    font-size: 4.5em;
+    font-weight: 800;
+    letter-spacing: .2em;
+    line-height: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+}
+
+.cta-actions {
+  margin-top: 50px;
+}
+
+.banner-text {
+  padding: 100px;
+  text-align: center;
+  color: white;
+
+  h2 {
+    font-weight: lighter;
+  }
+}
+
+.mat-stroked-button {
+  padding: 0 1.15em;
+  border-color: white;
+  margin: 0 1.25em;
+  min-width: 3em;
+  line-height: 36.4px
+}
+
+.mat-stroked-button {
+  margin: 15px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .banner-container {
+    min-width: 100vw;
+
     h1 {
-      font-size: 4.5em;
+      font-size: 2.5em;
       font-weight: 800;
       letter-spacing: .2em;
-      line-height: 1.5em;
+      line-height: 1.3em;
     }
-  
+
     h2 {
       font-size: 1.25em;
       line-height: 1.5em;
-    }
-  }
-  
-  .cta-actions {
-    margin-top: 50px;
-  }
-  
-  .banner-text {
-    padding: 100px;
-    text-align: center;
-    color: white;
-  
-    h2 {
       font-weight: lighter;
     }
   }
-  
-  .mat-stroked-button {
-    padding: 0 1.15em;
-    border-color: white;
-    margin: 0 1.25em;
-    min-width: 3em;
-    line-height: 36.4px
-  }
-  .mat-stroked-button {
-    margin: 15px;
-  
-  }
-  
-  @media screen and (max-width: 600px) {
-    .banner-container {
-      min-width: 100vw;
-  
-      h1 {
-        font-size: 2.5em;
-        font-weight: 800;
-        letter-spacing: .2em;
-        line-height: 1.3em;
-      }
-  
-      h2 {
-        font-size: 1.25em;
-        line-height: 1.5em;
-        font-weight: lighter;
-      }
-    }
-  }
-  
+}

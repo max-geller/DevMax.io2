@@ -1,15 +1,13 @@
 .page-layout {
-    display: flex;
-    flex-grow: 1;
-    margin: 25px;
-    padding: 0px;
+  display: flex;
+  flex-grow: 1;
+  margin: 25px;
+  padding: 0px;
+}
 
+@media screen and (min-width: 600px) {
+  .page-layout {
+    margin-left: 10%;
+    margin-right: 10%;
   }
-
-  @media screen and (min-width: 600px){
-    .page-layout {
-      margin-left: 10%;
-      margin-right: 10%;
-
-    }
-  }
+}
