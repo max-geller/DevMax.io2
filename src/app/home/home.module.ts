@@ -10,6 +10,7 @@ import { StatsComponent } from './components/stats/stats.component';
 import { CtaComponent } from './components/cta/cta.component';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
       declarations: [
@@ -24,6 +25,7 @@ import { BannerComponent } from './components/banner/banner.component';
     ],
     imports: [
         CommonModule,
+        CoreModule,
         SharedModule,
     ]
 })

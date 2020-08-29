@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
       console.log('Ohoh, something interrupted us');
     }
   }
-  
+
   ngOnInit(): void {
     this.pageScrollService.scroll({
       document: this.document,

@@ -9,10 +9,6 @@ import { GoogleChartsModule } from 'angular-google-charts';
 import { ToastrModule } from 'ngx-toastr';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GridsterModule } from 'angular-gridster2';
-import { NavbarComponent } from './nav/navbar/navbar.component';
-import { FooterComponent } from './nav/footer/footer.component';
-import { IconMenuComponent } from './nav/icon-menu/icon-menu.component';
-import { SidenavComponent } from './nav/sidenav/sidenav.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 
