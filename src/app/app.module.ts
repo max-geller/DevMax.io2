@@ -24,7 +24,10 @@ import { ArticlesComponent } from './features/articles/articles.component';
 import { LessonsComponent } from './features/lessons/lessons.component';
 import { CoursesComponent } from './features/courses/courses.component';
 import { AuthService } from './core/services/auth.service';
-
+import { NavbarComponent } from './shared/nav/navbar/navbar.component';
+import { FooterComponent } from './shared/nav/footer/footer.component';
+import { IconMenuComponent } from './shared/nav/icon-menu/icon-menu.component';
+import { SidenavComponent } from './shared/nav/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,10 @@ import { AuthService } from './core/services/auth.service';
     ArticlesComponent,
     LessonsComponent,
     CoursesComponent,
+    NavbarComponent,
+    FooterComponent,
+    IconMenuComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
