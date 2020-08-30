@@ -15,16 +15,14 @@
         </mat-button-toggle-group>
 
 
-        <div class="course-item" fxlayout="row" style="display: flex;" routerLink="/courses/course/{{course.id}}"
+        <div class="course-item" fxlayout="row" style="display: flex; margin:20px;;" routerLink="/courses/course/{{course.id}}"
           *ngFor="let course of courses$ | async">
           <div class="course-image" fxLayout="column">
-            <img
-              src="https://c8.alamy.com/comp/M65WP2/an-electrical-distribution-transformer-with-cooling-fins-is-located-M65WP2.jpg"
-              height="185px">
+            <img src="{{course.previewURL}}" height="185px">
 
           </div>
           <div class="course-description" fxLayout="column" fxFlex>
-            <h3>Alternating Current (AC) Fundamentals</h3>
+            <h3>{{course.title}}</h3>
             <div class="instructor-container" fxLayout="row" fxLayoutAlign="start center" style="color: white;">
               <button mat-icon-button>
                 <img class="team-avatar"
@@ -61,8 +59,6 @@
 
           </div>
         </div>
-
-        <mat-divider></mat-divider>
       </div>
     </div>
   </div>

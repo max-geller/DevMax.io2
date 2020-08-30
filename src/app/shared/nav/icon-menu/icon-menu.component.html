@@ -1,8 +1,11 @@
-<div class="icon-menu" fxLayout="column" fxLayoutAlign="end center">
+<div class="icon-menu" fxLayout="row" fxLayoutAlign="end center">
   <mat-nav-list>
 
     <button mat-icon-button (click)="toggleSearch()">
       <i class="fal fa-search"></i>
+    </button>
+    <button mat-icon-button >
+      <i class="fal fa-cog"></i>
     </button>
 
     <button mat-icon-button [matMenuTriggerFor]="tenantMenu">
