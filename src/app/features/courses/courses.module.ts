@@ -17,6 +17,7 @@ import { StudentFeedbackComponent } from './components/student-feedback/student-
 import { CourseReviewsComponent } from './components/course-reviews/course-reviews.component';
 import { CourseSidebarComponent } from './components/course-sidebar/course-sidebar.component';
 import { CoursesListComponent } from './pages/courses-list/courses-list.component';
+import { ModulesModule } from './modules/modules.module';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { CoursesListComponent } from './pages/courses-list/courses-list.componen
     SharedModule,
     CoreModule,
     RouterModule,
-    CoursesRoutes
+    CoursesRoutes,
+    ModulesModule
   ]
 })
 export class CoursesModule { }

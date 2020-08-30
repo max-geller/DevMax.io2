@@ -13,15 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'list',
-    component: CoursesListComponent,
-  },
-  {
-    path: 'modules',
-    loadChildren: () => import('./modules/modules.module').then(m => m.ModulesModule),
-  },
-  {
-    path: 'course/:id',
-    component: CourseDetailComponent,
+    component: m,
   },
 ];
 
@@ -29,4 +21,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CoursesRoutes { }
+export class ModulesRoutes { }

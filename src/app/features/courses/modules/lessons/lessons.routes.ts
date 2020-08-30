@@ -16,10 +16,6 @@ const routes: Routes = [
     component: CoursesListComponent,
   },
   {
-    path: 'modules',
-    loadChildren: () => import('./modules/modules.module').then(m => m.ModulesModule),
-  },
-  {
     path: 'course/:id',
     component: CourseDetailComponent,
   },
@@ -29,4 +25,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CoursesRoutes { }
+export class LessonsRoutes { }
