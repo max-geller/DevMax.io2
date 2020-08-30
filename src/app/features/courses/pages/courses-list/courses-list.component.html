@@ -17,10 +17,14 @@
 
         <div class="course-item" fxlayout="row" style="display: flex; margin:20px;;"
           routerLink="/courses/course/{{course.id}}" *ngFor="let course of courses$ | async">
-          <img src="{{course.previewURL}}" class="responsive" height="160px" width="250px">
           <div class="course-image" fxLayout="column">
-
-
+            <img src="{{course.previewURL}}" class="responsive" height="160px" width="260px">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> {{course.rating}} ({{course.reviews}}
+              Reviews)
+            </div>
+            <p style="font-style:italic;">26hrs, 13 Sections </p>
           </div>
           <div class="course-description" fxLayout="column" fxFlex>
             <h3>{{course.title}}</h3>
@@ -30,11 +34,7 @@
               </button>
               <p style="font-style:italic;color:black ">{{course.instructor}} </p>
             </div>
-            <div fxLayout="row" fxLayoutAlign="start center">
-              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> {{course.rating}} ({{course.reviews}} Reviews)
-            </div>
-            <p style="font-style:italic;">26hrs, 13 Sections </p>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex
