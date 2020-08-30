@@ -1,13 +1,15 @@
 <div class="wrapper" fxLayout="column" style="width: 100%;overflow:hidden;">
   <div class="app-navbar" fxLayout="row" style="padding-left: 20px;padding-right:20px;">
-    <div fxLayout="column" fxLayoutAlign="center start" fxFlex>
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlex>
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide fxShow.lt-sm>
         <i class="fal fa-bars" style="color:white;margin-top:6px;"></i>
       </button>
-      <mat-nav-list fxLayout="row" style="color: white; font-size: 12px;" fxShow="true" fxShow fxHide.lt-sm>
-        <mat-list-item routerLink="/home" style="font-size: 12px !important;">
-          HOME
+      <mat-nav-list>
+        <mat-list-item routerLink="/home">
+          <h1 style="margin-top: 12px;color:white;">DevMax.io</h1>
         </mat-list-item>
+      </mat-nav-list>
+      <mat-nav-list fxLayout="row" style="color: white; font-size: 12px;" fxShow="true" fxShow fxHide.lt-sm>
         <mat-list-item routerLink="/courses" style="font-size: 12px !important;">
           COURSES
         </mat-list-item>

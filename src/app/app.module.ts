@@ -21,22 +21,19 @@ import { InMemoryDataService } from './shared/in-memory-db/inmemory-db.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { TopicsComponent } from './features/topics/topics.component';
 import { ArticlesComponent } from './features/articles/articles.component';
-import { LessonsComponent } from './features/lessons/lessons.component';
-import { CoursesComponent } from './features/courses/courses.component';
+
 import { AuthService } from './core/services/auth.service';
-import { NavbarComponent } from './shared/nav/navbar/navbar.component';
 import { FooterComponent } from './shared/nav/footer/footer.component';
 import { IconMenuComponent } from './shared/nav/icon-menu/icon-menu.component';
 import { SidenavComponent } from './shared/nav/sidenav/sidenav.component';
+import { CoursesModule } from './features/courses/courses.module';
+import { LessonsModule } from './features/lessons/lessons.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopicsComponent,
     ArticlesComponent,
-    LessonsComponent,
-    CoursesComponent,
-    NavbarComponent,
     FooterComponent,
     IconMenuComponent,
     SidenavComponent
@@ -56,7 +53,10 @@ import { SidenavComponent } from './shared/nav/sidenav/sidenav.component';
     environment.production ?
       HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 100 }) : [],
     AgmCoreModule.forRoot({ apiKey: 'AIzaSyCYTxkREIgB7sNozUDIhlVNNDwXg9SS3wk' }),
-    HomeModule
+    HomeModule,
+    CoursesModule,
+    LessonsModule,
+
   ],
   providers: [
     AuthService

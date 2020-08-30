@@ -12,29 +12,44 @@
 
 
     <div class="courses-container">
-      <div class="course-item" fxlayout="row" style="display: flex;">
+      <div class="course-item" fxlayout="row" style="display: flex;" routerLink="./../detail">
         <div class="course-image" fxLayout="column">
           <img
             src="https://c8.alamy.com/comp/M65WP2/an-electrical-distribution-transformer-with-cooling-fins-is-located-M65WP2.jpg"
             height="185px">
+
         </div>
         <div class="course-description" fxLayout="column" fxFlex>
           <h3>Alternating Current (AC) Fundamentals</h3>
+          <div class="instructor-container" fxLayout="row" fxLayoutAlign="start center">
+            <button mat-icon-button>
+              <img class="team-avatar"
+                src="https://firebasestorage.googleapis.com/v0/b/estibase-dev.appspot.com/o/people%2Fcat.jpg?alt=media&token=11b557b7-2962-4361-98aa-a73d7e5377d8"
+                min-width="36px" height="36px">
+            </button>
+            <p style="font-style:italic">Max M. Geller </p>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> 4.7 (198 Reviews)
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.</p>
-          <h2>$35.99</h2>
-          <mat-chip-list>
-            <mat-chip>Power Systems</mat-chip>
-            <mat-chip>Electrical</mat-chip>
-          </mat-chip-list>
-          <div fxLayout="row">
+
+
+          <div fxLayout="row" fxLayoutAlign="start center">
             <button mat-stroked-button>Enroll</button>
             <button mat-stroked-button>Share</button>
             <button mat-stroked-button> <i class="fal fa-heart"></i> Wishlist </button>
+            <mat-chip-list>
+              <mat-chip style="font-size: 12px;">Power Systems</mat-chip>
+              <mat-chip style="font-size: 12px;">Electrical</mat-chip>
+            </mat-chip-list>
           </div>
+          <h2>$35.99</h2>
 
         </div>
       </div>
