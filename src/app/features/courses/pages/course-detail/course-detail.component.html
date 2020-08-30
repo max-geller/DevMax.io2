@@ -1,20 +1,22 @@
-<app-course-summary></app-course-summary>
-<div>
-  <div class="course-detail-container" fxFlex="70%">
-    <app-course-content></app-course-content>
+<div *ngIf="course">
+  <app-course-summary></app-course-summary>
+  <div>
+    <div class="course-detail-container" fxFlex="70%">
+      <app-course-content></app-course-content>
 
-    <app-also-bought></app-also-bought>
+      <app-also-bought></app-also-bought>
 
-    <app-course-reviews></app-course-reviews>
+      <app-course-reviews></app-course-reviews>
 
-    <app-featured-review></app-featured-review>
+      <app-featured-review></app-featured-review>
 
-    <app-instructor-bio></app-instructor-bio>
+      <app-instructor-bio></app-instructor-bio>
 
-    <app-student-feedback></app-student-feedback>
-  </div>
+      <app-student-feedback></app-student-feedback>
+    </div>
 
-  <div class="course-sidebar-container" fxFlex>
-    <app-course-sidebar></app-course-sidebar>
+    <div class="course-sidebar-container" fxFlex>
+      <app-course-sidebar></app-course-sidebar>
+    </div>
   </div>
 </div>
