@@ -8,7 +8,6 @@
   h3 {
     font-weight: bolder;
   }
-
 }
 
 .course-item:hover {
@@ -17,5 +16,18 @@
 }
 
 .course-description {
-    margin-left: 20px;
+  margin-left: 20px;
+}
+
+.course-filter-container {
+  min-width: 350px;
+}
+
+.course-sidebar {
+  position: absolute;
+  height: 850px;
+  background-color: white;
+  z-index: 1;
+  top: 50px;
+  min-width: 350px;
 }
