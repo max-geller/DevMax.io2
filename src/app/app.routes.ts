@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'sessions',
-    loadChildren: () => import('./features/courses/courses.module').then(m => m.CoursesModule),
+    loadChildren: () => import('./sessions/sessions.module').then(m => m.SessionsModule),
   },
   {
     path: 'courses',

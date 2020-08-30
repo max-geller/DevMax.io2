@@ -25,7 +25,11 @@
         <mat-list-item routerLink="/articles" style="font-size: 12px !important;">
           ARTICLES
         </mat-list-item>
+        <button mat-icon-button (click)="toggleSearch()">
+          <i class="fal fa-search"></i>
+        </button>
       </mat-nav-list>
+      
     </div>
     <div fxLayout="column" fxLayoutAlign="center end" fxFlex>
       <app-icon-menu></app-icon-menu>

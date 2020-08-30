@@ -11,6 +11,7 @@ export class IconMenuComponent {
   opened: boolean;
   email: string;
   password: string;
+  admin: string;
 
   constructor(public auth: AuthService, private afs: AngularFirestore) { }
   titles: any[];

@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pro.component.html',
 })
 export class ProComponent implements OnInit {
-
+  admin: string;
   constructor() { }
 
   ngOnInit(): void {

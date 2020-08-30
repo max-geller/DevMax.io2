@@ -19,21 +19,27 @@
           routerLink="/courses/course/{{course.id}}" *ngFor="let course of courses$ | async">
           <div class="course-image" fxLayout="column">
             <img src="{{course.previewURL}}" class="responsive" height="160px" width="260px">
-            <div fxLayout="row" fxLayoutAlign="start center">
+            <div fxLayout="row" fxLayoutAlign="center center">
               <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
               <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> {{course.rating}} ({{course.reviews}}
               Reviews)
+
             </div>
-            <p style="font-style:italic;">26hrs, 13 Sections </p>
-          </div>
-          <div class="course-description" fxLayout="column" fxFlex>
-            <h3>{{course.title}}</h3>
-            <div class="instructor-container" fxLayout="row" fxLayoutAlign="start center" style="color: white;">
+            <div fxLayout="row" fxLayoutAlign="center center">
+              <p style="font-style:italic;">26hrs, 13 Sections </p>
+            </div>
+            <div class="instructor-container" fxLayout="row" fxLayoutAlign="start center" style="padding:20px;color: white;">
               <button mat-icon-button>
                 <img class="team-avatar" src="{{course.instructorAvatar}}" min-width="36px" height="36px">
               </button>
               <p style="font-style:italic;color:black ">{{course.instructor}} </p>
             </div>
+          </div>
+          <div class="course-description" fxLayout="column" fxFlex>
+            <h3>{{course.title}}</h3>
+            <h4>{{course.headline}}</h4>
+
+
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
