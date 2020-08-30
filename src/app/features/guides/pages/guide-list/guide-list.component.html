@@ -1,65 +1,66 @@
 <div class="page-layout" fxLayout="column">
-    <h1>GUIDES:</h1>
-    <mat-divider></mat-divider>
-    <div class="main-container" fxLayout="column">
-  
-      <div class="courses-container" fxLayout="row">
-        <div class="course-filter-container" fxLayout="column">
-          <app-guide-filter></app-guide-filter>
-        </div>
-        <div class="course-list">
-          <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-            <mat-button-toggle value="bold">Recent</mat-button-toggle>
-            <mat-button-toggle value="italic">Popular</mat-button-toggle>
-            <mat-button-toggle value="underline">Trending</mat-button-toggle>
-          </mat-button-toggle-group>
-  
-  
-          <div class="course-item" fxlayout="row" style="display: flex; margin:20px;;"
-            routerLink="/guides/guide/{{guide.id}}" *ngFor="let guide of guides$ | async">
-            <div class="course-image" fxLayout="column">
-              <img src="{{guide.previewURL}}" class="responsive" height="160px" width="260px">
-              <div fxLayout="row" fxLayoutAlign="start center">
-                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> {{guide.rating}} ({{guide.reviews}}
-                Reviews)
-              </div>
-              <p style="font-style:italic;">26hrs, 13 Sections </p>
+  <h1>GUIDES:</h1>
+  <mat-divider></mat-divider>
+  <div class="main-container" fxLayout="column">
+
+    <div class="courses-container" fxLayout="row">
+      <div class="course-filter-container" fxLayout="column">
+        <app-guide-filter></app-guide-filter>
+      </div>
+      <div class="course-list">
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle value="bold">Recent</mat-button-toggle>
+          <mat-button-toggle value="italic">Popular</mat-button-toggle>
+          <mat-button-toggle value="underline">Trending</mat-button-toggle>
+        </mat-button-toggle-group>
+
+
+        <div class="course-item" fxlayout="row" style="display: flex; margin:20px;;"
+          routerLink="/guides/guide/{{guide.id}}" *ngFor="let guide of guides$ | async">
+          <div class="course-image" fxLayout="column">
+            <img src="{{guide.previewURL}}" class="responsive" height="160px" width="260px">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> {{guide.rating}} ({{guide.reviews}}
+              Reviews)
             </div>
-            <div class="course-description" fxLayout="column" fxFlex>
-              <h3>{{guide.title}}</h3>
-              <div class="instructor-container" fxLayout="row" fxLayoutAlign="start center" style="color: white;">
-                <button mat-icon-button>
-                  <img class="team-avatar" src="{{guide.instructorAvatar}}" min-width="36px" height="36px">
-                </button>
-                <p style="font-style:italic;color:black ">{{guide.instructor}} </p>
-              </div>
-  
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.</p>
-  
-  
-              <div fxLayout="row" fxLayoutAlign="start center">
-                <button mat-stroked-button>Enroll</button>
-                <button mat-stroked-button>Share</button>
-                <button mat-stroked-button> <i class="fal fa-heart"></i> Wishlist </button>
-                <mat-chip-list>
-                  <mat-chip style="font-size: 12px;">Power Systems</mat-chip>
-                  <mat-chip style="font-size: 12px;">Electrical</mat-chip>
-                </mat-chip-list>
-              </div>
-              <h2>$35.99</h2>
-  
+            <p style="font-style:italic;">26hrs, 13 Sections </p>
+          </div>
+          <div class="course-description" fxLayout="column" fxFlex>
+            <h3>{{guide.title}}</h3>
+            <div class="instructor-container" fxLayout="row" fxLayoutAlign="start center" style="color: white;">
+              <button mat-icon-button>
+                <img class="team-avatar" src="{{guide.instructorAvatar}}" min-width="36px" height="36px">
+              </button>
+              <p style="font-style:italic;color:black ">{{guide.instructor}} </p>
             </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit
+              anim id est laborum.</p>
+
+
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <button mat-stroked-button>Enroll</button>
+              <button mat-stroked-button>Share</button>
+              <button mat-stroked-button> <i class="fal fa-heart"></i> Wishlist </button>
+              <mat-chip-list>
+                <mat-chip style="font-size: 12px;">Power Systems</mat-chip>
+                <mat-chip style="font-size: 12px;">Electrical</mat-chip>
+              </mat-chip-list>
+            </div>
+            <h2>$35.99</h2>
+
           </div>
         </div>
+        <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" style="border-radius: 25px;">
+        </mat-paginator>
       </div>
     </div>
   </div>
-  
+</div>
