@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from './../../shared/shared.module';
+import { CoreModule } from './../../core/core.module';
 import { FeedComponent } from './components/feed/feed.component';
 import { BrowseTagsComponent } from './components/browse-tags/browse-tags.component';
 import { BrowseCoursesComponent } from './components/browse-courses/browse-courses.component';
@@ -10,11 +11,11 @@ import { StatsComponent } from './components/stats/stats.component';
 import { CtaComponent } from './components/cta/cta.component';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { CoreModule } from '../core/core.module';
+
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 @NgModule({
-      declarations: [
+    declarations: [
         HomeComponent,
         FeedComponent,
         BrowseTagsComponent,

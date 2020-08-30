@@ -14,7 +14,7 @@ import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-import { HomeModule } from './home/home.module';
+import { HomeModule } from './pages/home/home.module';
 import { AgmCoreModule } from '@agm/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { InMemoryDataService } from './shared/in-memory-db/inmemory-db.service';
@@ -27,8 +27,15 @@ import { FooterComponent } from './shared/nav/footer/footer.component';
 import { IconMenuComponent } from './shared/nav/icon-menu/icon-menu.component';
 import { SidenavComponent } from './shared/nav/sidenav/sidenav.component';
 import { CoursesModule } from './features/courses/courses.module';
-import { LessonsModule } from './features/lessons/lessons.module';
+import { GuidesModule } from './features/guides/guides.module';
 import { AdminModule } from './admin/admin.module';
+import { ProComponent } from './pages/pro/pro.component';
+import { AboutComponent } from './pages/about/about.component';
+import { TagsComponent } from './pages/tags/tags.component';
+import { StoreComponent } from './pages/store/store.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { MissionComponent } from './pages/mission/mission.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,14 @@ import { AdminModule } from './admin/admin.module';
     ArticlesComponent,
     FooterComponent,
     IconMenuComponent,
-    SidenavComponent
+    SidenavComponent,
+    ProComponent,
+    AboutComponent,
+    TagsComponent,
+    StoreComponent,
+    ContactComponent,
+    BlogComponent,
+    MissionComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +70,7 @@ import { AdminModule } from './admin/admin.module';
     AgmCoreModule.forRoot({ apiKey: 'AIzaSyCYTxkREIgB7sNozUDIhlVNNDwXg9SS3wk' }),
     HomeModule,
     CoursesModule,
-    LessonsModule,
+    GuidesModule,
     AdminModule
 
   ],

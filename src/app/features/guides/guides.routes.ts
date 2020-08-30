@@ -1,7 +1,7 @@
-
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LessonsComponent } from './lessons.component';
+import { GuideListComponent } from './pages/guide-list/guide-list.component';
+import { GuideDetailComponent } from './pages/guide-detail/guide-detail.component';
 
 const routes: Routes = [
   {
@@ -11,12 +11,16 @@ const routes: Routes = [
   },
   {
     path: 'list',
-    component: LessonsComponent
-  }
+    component: GuideListComponent
+  },
+  {
+    path: 'guide/:id',
+    component: GuideDetailComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LessonsRoutes { }
+export class GuidesRoutes { }

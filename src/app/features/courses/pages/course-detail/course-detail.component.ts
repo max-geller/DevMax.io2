@@ -1,7 +1,6 @@
 import { CourseInterface } from './../../../../core/models/course.model';
 
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { FirestoreService } from 'src/app/core/services/firestore.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { ActivatedRoute } from '@angular/router';
