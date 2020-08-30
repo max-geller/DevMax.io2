@@ -19,7 +19,7 @@ import { AgmCoreModule } from '@agm/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { InMemoryDataService } from './shared/in-memory-db/inmemory-db.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { TopicsComponent } from './features/topics/topics.component';
+import { TopicsComponent } from './pages/topics/topics.component';
 import { ArticlesComponent } from './features/articles/articles.component';
 
 import { AuthService } from './core/services/auth.service';
