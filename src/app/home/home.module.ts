@@ -11,6 +11,7 @@ import { CtaComponent } from './components/cta/cta.component';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CoreModule } from '../core/core.module';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 @NgModule({
       declarations: [
@@ -21,7 +22,8 @@ import { CoreModule } from '../core/core.module';
         ReviewsComponent,
         StatsComponent,
         CtaComponent,
-        BannerComponent
+        BannerComponent,
+        NewsletterComponent
     ],
     imports: [
         CommonModule,

@@ -15,27 +15,26 @@
         </mat-button-toggle-group>
 
 
-        <div class="course-item" fxlayout="row" style="display: flex; margin:20px;;" routerLink="/courses/course/{{course.id}}"
-          *ngFor="let course of courses$ | async">
+        <div class="course-item" fxlayout="row" style="display: flex; margin:20px;;"
+          routerLink="/courses/course/{{course.id}}" *ngFor="let course of courses$ | async">
+          <img src="{{course.previewURL}}" class="responsive" height="160px" width="250px">
           <div class="course-image" fxLayout="column">
-            <img src="{{course.previewURL}}" height="185px">
+
 
           </div>
           <div class="course-description" fxLayout="column" fxFlex>
             <h3>{{course.title}}</h3>
             <div class="instructor-container" fxLayout="row" fxLayoutAlign="start center" style="color: white;">
               <button mat-icon-button>
-                <img class="team-avatar"
-                  src="https://firebasestorage.googleapis.com/v0/b/estibase-dev.appspot.com/o/people%2Fcat.jpg?alt=media&token=11b557b7-2962-4361-98aa-a73d7e5377d8"
-                  min-width="36px" height="36px">
+                <img class="team-avatar" src="{{course.instructorAvatar}}" min-width="36px" height="36px">
               </button>
-              <p style="font-style:italic;color: white !important;">Max M. Geller </p>
+              <p style="font-style:italic;color:black ">{{course.instructor}} </p>
             </div>
             <div fxLayout="row" fxLayoutAlign="start center">
               <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> 4.7 (198 Reviews)
+              <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> {{course.rating}} ({{course.reviews}} Reviews)
             </div>
-            <p style="font-style:italic;color:white;">26hrs, 13 Sections </p>
+            <p style="font-style:italic;">26hrs, 13 Sections </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex
