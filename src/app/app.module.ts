@@ -36,6 +36,10 @@ import { StoreComponent } from './pages/store/store.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { MissionComponent } from './pages/mission/mission.component';
+import { SessionsModule } from './sessions/sessions.module';
+import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { TermsComponent } from './pages/terms/terms.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +56,9 @@ import { MissionComponent } from './pages/mission/mission.component';
     ContactComponent,
     BlogComponent,
     MissionComponent,
+    PrivacyComponent,
+    TermsComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,8 +78,8 @@ import { MissionComponent } from './pages/mission/mission.component';
     HomeModule,
     CoursesModule,
     GuidesModule,
-    AdminModule
-
+    AdminModule,
+    SessionsModule
   ],
   providers: [
     AuthService

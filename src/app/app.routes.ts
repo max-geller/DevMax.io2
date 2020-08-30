@@ -10,6 +10,10 @@ import { MissionComponent } from './pages/mission/mission.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ProComponent } from './pages/pro/pro.component';
 import { StoreComponent } from './pages/store/store.component';
+import { NotFoundComponent } from './shared/components/pages/not-found/not-found.component';
+import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { TermsComponent } from './pages/terms/terms.component';
 
 
 const routes: Routes = [
@@ -17,6 +21,22 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'sessions',
+    loadChildren: () => import('./features/courses/courses.module').then(m => m.CoursesModule),
+  },
+  {
+    path: 'courses',
+    loadChildren: () => import('./features/courses/courses.module').then(m => m.CoursesModule),
+  },
+  {
+    path: 'guides',
+    loadChildren: () => import('./features/guides/guides.module').then(m => m.GuidesModule),
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),
   },
   {
     path: 'home',
@@ -55,18 +75,21 @@ const routes: Routes = [
     component: ProComponent
   },
   {
-    path: 'courses',
-    loadChildren: () => import('./features/courses/courses.module').then(m => m.CoursesModule),
+    path: 'privacy',
+    component: PrivacyComponent
   },
   {
-    path: 'guides',
-    loadChildren: () => import('./features/guides/guides.module').then(m => m.GuidesModule),
+    path: 'profile',
+    component: ProfileComponent
   },
   {
-    path: 'admin',
-    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),
+    path: 'terms',
+    component: TermsComponent
   },
-
+  {
+    path: '*',
+    component: NotFoundComponent
+  }
 ];
 
 @NgModule({
