@@ -14,10 +14,6 @@ h5 {
   font-family: 'Nunito';
 }
 
-h1 {
-  font-size: 30px !important;
-}
-
 p,
 a,
 li {
@@ -32,3 +28,27 @@ mat-list-item-content {
   font-family: 'Lato'
 }
 
+h1 {
+  font-size: 30;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 26;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 22;
+  font-weight: 800;
+}
+
+h5 {
+  font-size: 20;
+  font-weight: 800;
+}
