@@ -1,8 +1,12 @@
 .course-cover {
-  padding: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   padding-left: 12%;
   background-color: rgb(36, 36, 36);
-  height: 350px;
+
+  span {
+    width: 15px;
+  }
 
   h1,
   h2,
@@ -35,4 +39,20 @@
     margin-right: 10px;
   }
 
+}
+
+.course-detail-container {
+  background-color: white;
+  padding: 20px;
+  padding-left: 12%;
+
+}
+
+.course-detail-item {
+  max-width: 50%;
+  padding: 20px;
+  margin: 15px;
+  border-style: solid;
+  border-color: rgba(214, 214, 214, 0.438) !important;
+  background-color: rgba(230, 230, 230, 0.11);
 }
