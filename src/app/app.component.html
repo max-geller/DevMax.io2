@@ -25,20 +25,21 @@
         <mat-list-item routerLink="/articles" style="font-size: 12px !important;">
           ARTICLES
         </mat-list-item>
-        <button mat-icon-button >
+        <button mat-icon-button>
           <i class="fal fa-search" style="margin-top: 6px;"></i>
         </button>
       </mat-nav-list>
-      
+
     </div>
     <div fxLayout="column" fxLayoutAlign="center end" fxFlex>
       <app-icon-menu></app-icon-menu>
     </div>
   </div>
 
-
   <mat-sidenav-container fxLayout="column" style="flex-grow: 1;max-width: 100vw;">
-    <mat-sidenav class="primary-sidenav" #sidenav mode="side"> </mat-sidenav>
+    <mat-sidenav class="primary-sidenav" #sidenav mode="side">
+      <app-sidenav></app-sidenav>
+    </mat-sidenav>
     <mat-sidenav-content>
       <div class="main-container" fxLayout="column" style="flex-grow: 1;width: 100vw;">
         <ngx-spinner size="medium" color="#FFFFFF" type="line-scale" [fullScreen]="false">

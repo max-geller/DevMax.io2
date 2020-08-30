@@ -1,27 +1,16 @@
 <div class="banner-container" fxLayoutAlign="center center">
-  <div class="banner-text" >
+  <div class="banner-text">
     <h1>MODERN ENGINEERING TUTORIALS & COURSES</h1>
     <h2>
-     Learn Modern Engineering & Technology with DevMax.io
+      Learn Modern Engineering & Technology with DevMax.io
     </h2>
     <div class="cta-actions">
-      <button
-        mat-stroked-button
-        pageScroll
-        [pageScrollOffset]="80"
-        [pageScrollEasing]="myEasing"
-        href="#cta"
-        routerLinkActive
-      >
+      <button mat-stroked-button pageScroll [pageScrollOffset]="80" [pageScrollEasing]="myEasing" href="#cta"
+        routerLinkActive>
         Become a Pro Member
       </button>
-      <button
-        mat-stroked-button
-        pageScroll
-        [pageScrollOffset]="80"
-        [pageScrollEasing]="myEasing"
-        href="#browse-courses"
-      >
+      <button mat-stroked-button pageScroll [pageScrollOffset]="80" [pageScrollEasing]="myEasing"
+        href="#browse-courses">
         👋 Browse Courses
       </button>
     </div>
@@ -30,6 +19,7 @@
 
 <app-stats id="stats"></app-stats>
 <app-browse-tags id="browse-tags"></app-browse-tags>
+<app-newsletter></app-newsletter>
 <app-feed id="feed"></app-feed>
 <app-browse-courses id="browse-courses"></app-browse-courses>
 <app-reviews id="reviews"></app-reviews>
