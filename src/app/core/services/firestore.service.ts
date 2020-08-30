@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable } from 'rxjs/internal/Observable';
@@ -19,7 +18,6 @@ export class FirestoreService {
   private galleryDoc: AngularFirestoreDocument<CourseInterface>;
   public selectedCourse: CourseInterface = {
     id: null,
-
   };
 
   getAllCourses() {
@@ -36,7 +34,7 @@ export class FirestoreService {
         });
       }));
   }
-  
+
 
 
   getOneCourse(idCourse: string) {
@@ -53,31 +51,5 @@ export class FirestoreService {
     }));
   }
 
-  getOneGallery(idGallery: string) {
-    this.galleryDoc = this.afs.doc<CourseInterface>(`galleries/${idGallery}`);
-    return this.gallery = this.galleryDoc.snapshotChanges().pipe(map(action => {
-      if (action.payload.exists === false) {
-        return null;
-      } else {
-        const data = action.payload.data() as CourseInterface;
-        console.log(idGallery);
-        data.id = action.payload.id;
-        return data;
-      }
-    }));
-  }
-  getAllGalleries() {
-    this.coursesCollection = this.afs.collection<CourseInterface>('courses');
-    return this.courses = this.coursesCollection.snapshotChanges()
-      .pipe(map(changes => {
-        return changes.map(action => {
-          const data = action.payload.doc.data() as CourseInterface;
 
-          data.id = action.payload.doc.id;
-          console.log(data);
-          return data;
-
-        });
-      }));
-  }
 }
