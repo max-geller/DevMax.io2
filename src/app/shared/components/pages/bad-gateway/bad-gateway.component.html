@@ -1,0 +1,32 @@
+<div class="not-found-layout" style="height: 100vh;;" fxLayout="column" fxLayoutAlign="center center">
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/estibase-dev.appspot.com/o/logos%2Flogo_primary-white.png?alt=media&token=cc6792dc-6c16-4ff2-8167-945715081d47"
+    height="70px" style="margin-bottom: 35px;" />
+  <div class="not-found-content" fxLayout="column" fxLayoutAlign="center center">
+    <h1>502</h1>
+    <h2>SERVER TIMEOUT </h2>
+    <p style="color: white;">What exactly are you tying to do?? </p>
+    <br>
+    <div class="download-container" fxLayout="column" fxLayoutAlign="center center" fxShow fxHide.lt-sm>
+      <h3>But have you downloaded the app yet?</h3>
+      <div class="action-container" fxLayout="row">
+        <button mat-raised-button routerLink="/download">
+          <i class="fab fa-windows"></i> &nbsp; Download for Desktop
+        </button>
+        <span style="width: 20px;"></span>
+        <button mat-raised-button color="accent" routerLink="/team">
+          Back
+        </button>
+      </div>
+    </div>
+    <div class="giphy-logo" style="color: white; position: absolute; bottom: 0; margin-bottom: 15px; font-size: 9px;"
+      fxLayout="row" fxLayoutAlign="center center">
+      Media provided by&nbsp;&nbsp;<img src="assets/images/partners/giphy-logo.png" height="12px" />
+    </div>
+    <div class="contact-icon"
+      style="border-radius: 50%; height: 60px; width: 60px;background: #FFC107; position: absolute; bottom: 20px;right: 20px;cursor: pointer;"
+      routerLink='/sessions/support' fxLayout="column" fxLayoutAlign="center center">
+      <i class="fas fa-phone" style="font-size: 25px !important;color:white"></i>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="modal-layout">
+  <h3 mat-dialog-title>ADD NEW TENANT</h3>
+  <mat-divider></mat-divider>
+
+  <form [formGroup]="addTenantFormGroup">
+    <div fxLayout="row wrap">
+      <div fxLayout="column">
+        <mat-form-field class="md-field">
+          <mat-label>ID</mat-label>
+          <input matInput formControlName="id">
+        </mat-form-field>
+        <mat-form-field class="md-field">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+        <mat-checkbox formControlName="isActive">Active</mat-checkbox>
+      </div>
+    </div>
+  </form>
+
+  <div fxLayout="row" mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)="save()">Save</button>
+    <button mat-raised-button (click)="close()">Cancel</button>
+  </div>
+
+
+</div>

@@ -1,0 +1,69 @@
+<mat-card class="wide-card">
+  <mat-form-field>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
+
+  <mat-table [dataSource]="users" [trackBy]="trackByUid" matSort class="animate">
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
+
+    <ng-container matColumnDef="uid">
+      <mat-header-cell *matHeaderCellDef mat-sort-header fxFlex> UID </mat-header-cell>
+      <mat-cell *matCellDef="let data "> {{ data.uid }} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="displayName">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+      <mat-cell *matCellDef="let data"> {{ data.displayName }} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
+      <mat-cell *matCellDef="let data"> {{ data.email }} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="role">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Role </mat-header-cell>
+      <mat-cell *matCellDef="let data"> {{ data.role }} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="tenant">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Tenant </mat-header-cell>
+      <mat-cell *matCellDef="let data"> {{ data.tenant }} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="edit">
+      <mat-header-cell *matHeaderCellDef>
+        <button mat-icon-button color="primary" (click)="addUser()">
+          <i class="fas fa-plus"></i>
+        </button>
+      </mat-header-cell>
+      <mat-cell *matCellDef="let row; let i=index;">
+        <button mat-icon-button color="accent" [matMenuTriggerFor]="projectActions">
+          <i class="fas fa-pencil"></i>
+        </button>
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="delete">
+      <mat-header-cell *matHeaderCellDef>
+
+      </mat-header-cell>
+      <mat-cell *matCellDef="let row; let i=index;">
+        <button mat-icon-button color="warn" >
+          <i class="fas fa-times"></i>
+        </button>
+      </mat-cell>
+    </ng-container>
+  </mat-table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</mat-card>
+
+
+
+<mat-menu #projectActions="matMenu" xPosition="before">
+  <button mat-menu-item  class="pointer">
+    <i class="fal fa-edit"></i>&nbsp; &nbsp; Edit</button>
+  <button mat-menu-item routerLink="modules/tenants/teams" routerLinkActive="active" class="pointer">
+    <i class="fal fa-trash-alt"></i>&nbsp; &nbsp; Delete</button>
+  <button mat-menu-item routerLink="modules/tenants/subscriptions" routerLinkActive="active" class="pointer">
+    <i class="fal fa-search-dollar"></i>&nbsp; &nbsp; Compare</button>
+  <button mat-menu-item routerLink="modules/tenants/billing" routerLinkActive="active" class="pointer">
+    <i class="fal fa-copy"></i>&nbsp; &nbsp; Duplicate</button>
+  <button mat-menu-item routerLink="modules/tenants/billing" routerLinkActive="active" class="pointer">
+    <i class="fal fa-file-chart-line"></i>&nbsp; &nbsp; Quick Report</button>
+</mat-menu>

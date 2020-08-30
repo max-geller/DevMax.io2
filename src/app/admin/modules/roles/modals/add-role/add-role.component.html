@@ -1,0 +1,19 @@
+<div class="modal-layout">
+  <h3 mat-dialog-title>ADD NEW ROLE</h3>
+  <mat-divider></mat-divider>
+
+  <div mat-dialog-content>
+    <form [formGroup]="addRoleFormGroup">
+      <mat-form-field class="md-field">
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="description">
+      </mat-form-field>
+
+
+    </form>
+    <div fxLayout="row" mat-dialog-actions>
+      <button mat-raised-button color="primary" (click)="save()">Save</button>
+      <button mat-raised-button (click)="close()">Cancel</button>
+    </div>
+  </div>
+</div>

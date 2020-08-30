@@ -1,0 +1,48 @@
+<div class="nav-menu" fxHide fxShow.gt-sm>
+  <mat-nav-list fxLayout="row" fxLayoutAlign="center center">
+    <mat-list-item [matMenuTriggerFor]="usersMenu">
+      <h3>USERS &nbsp;<i class="fal fa-chevron-down"></i></h3>
+    </mat-list-item>
+    <mat-list-item [matMenuTriggerFor]="tenantsMenu">
+      <h3>TENANTS &nbsp;<i class="fal fa-chevron-down"></i></h3>
+    </mat-list-item>
+    <mat-list-item [matMenuTriggerFor]="reportingMenu">
+      <h3>REPORTING &nbsp;<i class="fal fa-chevron-down"></i></h3>
+    </mat-list-item>
+    <mat-list-item routerLink="/admin/analytics">
+      <h3>ANALTYICS</h3>
+    </mat-list-item>
+    <mat-list-item [matMenuTriggerFor]="settingsMenu">
+      <h3>SETTINGS &nbsp;<i class="fal fa-chevron-down"></i></h3>
+    </mat-list-item>
+  </mat-nav-list>
+
+  <mat-menu #usersMenu="matMenu" xPosition="after">
+    <button mat-menu-item (click)="addUser()">Add User</button>
+    <button mat-menu-item routerLink="/admin/users" style="min-width: 200px;">Manage Users</button>
+    <button mat-menu-item routerLink="/admin/roles">Manage Roles</button>
+    <button mat-menu-item routerLink="/admin/permissions">Permissions</button>
+  </mat-menu>
+
+  <mat-menu #tenantsMenu="matMenu" xPosition="after">
+    <button mat-menu-item (click)="addTenant()">Add Tenant</button>
+    <button mat-menu-item routerLink="/admin/tenants">Manage Tenants</button>
+    <button mat-menu-item routerLink="/admin/subscriptions">Subscriptions</button>
+    <button mat-menu-item routerLink="/admin/tenants/billing">Billing</button>
+    <button mat-menu-item routerLink="/admin/tenants/invoices">Invoices</button>
+  </mat-menu>
+
+  <mat-menu #reportingMenu="matMenu" xPosition="after">
+    <button mat-menu-item routerLink="/admin/reports" style="min-width: 200px;">Manage Reports</button>
+    <button mat-menu-item routerLink="/admin/reports/variance">User Engagement</button>
+    <button mat-menu-item routerLink="/admin/reports/trends">Tenant Engagement</button>
+    <button mat-menu-item routerLink="/admin/reports/custom">Custom Reports</button>
+    <button mat-menu-item routerLink="/admin/reports/preferences" mat-menu-item>Preferences</button>
+  </mat-menu>
+
+  <mat-menu #settingsMenu="matMenu" xPosition="before">
+    <button mat-menu-item routerLink="/admin/settings" style="min-width: 200px;">Application Settings</button>
+    <button mat-menu-item routerLink="/admin/integrations">API Integrations</button>
+    <button mat-menu-item routerLink="/admin/templates">Templates</button>
+  </mat-menu>
+</div>

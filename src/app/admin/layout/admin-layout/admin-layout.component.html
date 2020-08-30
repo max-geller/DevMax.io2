@@ -1,0 +1,35 @@
+<div class="module-layout" fxLayout="column" style="height:100vh;">
+
+  <mat-toolbar class="admin-navbar" fxLayout="row" fxLayoutAlign="space-between center"
+    style="background-color: black;">
+    <div class="brand-container" fxLayout="row" fxLayoutAlign="center center" style="margin-bottom: 5px;">
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide fxShow.lt-md><i class="fal fa-bars"
+          style="margin-top: 5px; color: white;"></i></button>
+      <mat-nav-list fxLayout="row" fxLayoutAlign="center center">
+        <mat-list-item routerLink='/team'>
+          <i class="fas fa-exchange" style="color: white;"></i>
+        </mat-list-item>
+        <mat-list-item routerLink='/admin' fxLayoutAlign="center center">
+          <h1 style="color: white;font-size: 14px;">ADMIN PORTAL</h1>
+        </mat-list-item>
+      </mat-nav-list>
+      <span></span>
+
+
+    </div>
+    <admin-admin-menu></admin-admin-menu>
+  </mat-toolbar>
+
+  <admin-admin-actions></admin-admin-actions>
+  <mat-sidenav-container fxLayout="column" style="flex-grow: 1;">
+    <mat-sidenav class="primary-sidenav" #sidenav mode="side">
+      <admin-sidenav></admin-sidenav>
+    </mat-sidenav>
+    <mat-divider></mat-divider>
+    <div class="main-container" fxLayout="column">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-container>
+
+
+</div>

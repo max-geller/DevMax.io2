@@ -9,8 +9,12 @@ export class ProjectsDB {
       location: "San Francisco, CA",
       isActive: true,
       stage: "100% CD Design",
-      photoURL: "http://somephoto.com/pic.jpeg",
+      dataFile: "./apps/dist/...",
+      widgets: [],
+      projectPhotoURL: "http://somephoto.com/pic.jpeg",
+      projectHeaderURL: "http://somephoto.com/pic.jpeg",
     },
+    
     {
       id: '2348u23489sdg8764',
       projectName: "SFO T1C/Boarding Area B",
@@ -20,7 +24,10 @@ export class ProjectsDB {
       location: "San Francisco, CA",
       isActive: true,
       stage: "Closeout",
-      photoURL: "http://somephoto.com/pic.jpeg",
+      dataFile: "./apps/dist/...",
+      widgets: [],
+      projectPhotoURL: "http://somephoto.com/pic.jpeg",
+      projectHeaderURL: "http://somephoto.com/pic.jpeg",
     },
     {
       id: '65876567534',
@@ -31,7 +38,10 @@ export class ProjectsDB {
       location: "San Francisco, CA",
       isActive: true,
       stage: "Closeout",
-      photoURL: "http://somephoto.com/pic.jpeg",
+      dataFile: "./apps/dist/...",
+      widgets: [],
+      projectPhotoURL: "http://somephoto.com/pic.jpeg",
+      projectHeaderURL: "http://somephoto.com/pic.jpeg",
     },
     {
       id: '767tyfghu54',
@@ -42,7 +52,10 @@ export class ProjectsDB {
       location: "San Francisco, CA",
       isActive: true,
       stage: "Mobilization",
-      photoURL: "http://somephoto.com/pic.jpeg",
+      dataFile: "./apps/dist/...",
+      widgets: [],
+      projectPhotoURL: "http://somephoto.com/pic.jpeg",
+      projectHeaderURL: "http://somephoto.com/pic.jpeg",
     },
     {
       id: '767t7656664u54',
@@ -53,7 +66,10 @@ export class ProjectsDB {
       location: "San Francisco, CA",
       isActive: true,
       stage: "Installation: Structural",
-      photoURL: "http://somephoto.com/pic.jpeg",
+      dataFile: "./apps/dist/...",
+      widgets: [],
+      projectPhotoURL: "http://somephoto.com/pic.jpeg",
+      projectHeaderURL: "http://somephoto.com/pic.jpeg",
     },
     {
       id: '32t76578656648h',
@@ -64,7 +80,10 @@ export class ProjectsDB {
       location: "San Francisco, CA",
       isActive: false,
       stage: "Operations & Maintenance",
-      photoURL: "http://somephoto.com/pic.jpeg",
+      dataFile: "./apps/dist/...",
+      widgets: [],
+      projectPhotoURL: "http://somephoto.com/pic.jpeg",
+      projectHeaderURL: "http://somephoto.com/pic.jpeg",
     }
   ]
 }

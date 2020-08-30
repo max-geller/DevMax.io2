@@ -1,0 +1,140 @@
+<div class="modal-layout">
+  <h3 mat-dialog-title>EDIT USER</h3>
+  <mat-divider></mat-divider>
+
+  <div mat-dialog-content>
+    <mat-vertical-stepper #stepper>
+      <form [formGroup]="editUserFormGroup">
+        <mat-step>
+          <ng-template matStepLabel>BASIC INFORMATION</ng-template>
+
+          <div fxLayout="row wrap">
+            <div fxLayout="column">
+              <mat-form-field class="md-field">
+                <mat-label>First Name</mat-label>
+                <input matInput formControlName="firstName">
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Last Name</mat-label>
+                <input matInput formControlName="lastName">
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Display Name</mat-label>
+                <input matInput formControlName="displayName">
+              </mat-form-field>
+            </div>
+            <div fxLayout="column">
+              <mat-form-field class="md-field">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email">
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Role</mat-label>
+                <mat-select formControlName="role">
+                  <mat-option value="global-admin">Global Admin</mat-option>
+                  <mat-option value="estibase-admin">Estibase Admin</mat-option>
+                  <mat-option value="tenant-admin">Tenant Admin</mat-option>
+                  <mat-option value="tenant-manager">Tenant Manager</mat-option>
+                  <mat-option value="client-manager">Client Manager</mat-option>
+                  <mat-option value="client-viewer">Client Viewer</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Tenant</mat-label>
+                <mat-select formControlName="tenant">
+                  <mat-option value="hci">Hollins Consulting, Inc.</mat-option>
+                  <mat-option value="sutro">Sutro Partners, LLC.</mat-option>
+                  <mat-option value="xyz">XYZ, Inc. (Demo)</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <mat-form-field class="lg-field">
+            <mat-label>Teams</mat-label>
+            <mat-select multiple formControlName="teams">
+              <mat-option>SFO Terminal 3 West</mat-option>
+              <mat-option>Golden Gate Tennis Center</mat-option>
+              <mat-option>Rossi Pool Renovation</mat-option>
+              <mat-option>Long-Baseline Neutrino Facility</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-step>
+
+        <mat-step>
+          <div fxLayout="row wrap">
+            <ng-template matStepLabel>CONTACT INFORMATION</ng-template>
+            <div fxLayout="column">
+              <mat-form-field class="md-field">
+                <mat-label>Company</mat-label>
+                <input matInput formControlName="company">
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Title</mat-label>
+                <input matInput formControlName="title">
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Location</mat-label>
+                <input matInput formControlName="location">
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Department</mat-label>
+                <input matInput formControlName="department">
+              </mat-form-field>
+            </div>
+            <div fxLayout="column">
+              <mat-form-field class="md-field">
+                <mat-label>Work Email</mat-label>
+                <input matInput formControlName="workEmail">
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Mobile Phone</mat-label>
+                <input matInput formControlName="mobilePhone">
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Work Phone</mat-label>
+                <input matInput formControlName="workPhone">
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-step>
+
+        <mat-step>
+          <div fxLayout="column wrap">
+            <div fxLayout="column">
+              <ng-template matStepLabel>ACCOUNT SETTINGS</ng-template>
+              <div fxLayout="column">
+                <mat-form-field class="md-field">
+                  <mat-label>Theme</mat-label>
+                  <mat-select formControlName="defaultTheme">
+                    <mat-option value="hayes">Hayes Valley</mat-option>
+                    <mat-option value="presidio">Presidio</mat-option>
+                    <mat-option value="dogpatch">Dogpatch</mat-option>
+                    <mat-option value="gg">Golden Gate</mat-option>
+                    <mat-option value="sutro">Sutro Tower</mat-option>
+                    <mat-option value="potrero">Potrero</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field class="md-field">
+                  <mat-label>Default Route</mat-label>
+                  <mat-select formControlName="homepage">
+                    <mat-option value="team">Team Dashboard</mat-option>
+                    <mat-option value="admin">Admin Dashboard</mat-option>
+                    <mat-option value="manage-estimates">Manage Estimates</mat-option>
+                    <mat-option value="client">Client Dashboard</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-checkbox formControlName="sendWelcomeEmail">Send Welcome Email</mat-checkbox>
+                <mat-checkbox formControlName="verifyAccount">Verifiy Account</mat-checkbox>
+                <mat-checkbox formControlName="tutorial">First-Use Tutorial</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </mat-step>
+      </form>
+    </mat-vertical-stepper>
+  </div>
+  <div fxLayout="row" mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)="save()">Save</button>
+    <button mat-raised-button (click)="close()">Close</button>
+  </div>
+</div>

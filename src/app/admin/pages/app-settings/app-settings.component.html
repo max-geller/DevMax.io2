@@ -1,0 +1,80 @@
+<div class="page-layout" fxLayout="column">
+  <h1>APPLICATION SETTINGS</h1>
+
+  <mat-divider style="margin-bottom: 0px !important;"></mat-divider>
+
+  <div class="actions-container">
+    <button mat-raised-button class="action-button" color="primary" routerLink='/admin/dashboard'>Back</button>
+    <button mat-raised-button class="action-button">Theme Builder</button>
+    <button mat-raised-button class="action-button">Report Builder</button>
+    <button mat-raised-button class="action-button">Email User</button>
+    <button mat-raised-button class="action-button">Send Push Notification</button>
+  </div>
+  <mat-divider></mat-divider>
+
+  <div class="main-container">
+    <form>
+      <p>API Keys</p>
+      <mat-form-field class="md-field">
+        <mat-label>Admin Theme:</mat-label>
+        <mat-select>
+          <option value="volvo">Presidio</option>
+          <option value="saab">Dogpatch</option>
+          <option value="volvo">Golden Gate</option>
+          <option value="saab">Sutro Red</option>
+          <option value="saab">Potrero</option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="md-field">
+        <mat-label>Default New User Role:</mat-label>
+        <mat-select>
+          <option value="volvo">Tenant User</option>
+          <option value="volvo">Tenant Admin</option>
+          <option value="saab">Client User</option>
+          <option value="volvo">Client Admin</option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="md-field">
+        <mat-label>Default User Theme:</mat-label>
+        <mat-select>
+          <option value="volvo">Hayes Valley</option>
+          <option value="volvo">Presidio</option>
+          <option value="saab">Dogpatch</option>
+          <option value="volvo">Golden Gate</option>
+          <option value="saab">Sutro Red</option>
+          <option value="saab">Potrero</option>
+        </mat-select>
+      </mat-form-field>
+      <mat-checkbox>Allow Tenant Themes to Change Theme</mat-checkbox>
+
+      Tenant Defaults
+
+      Default database
+      default currency
+      default theme
+      default projects
+      default project types
+      default estimate types
+      default design stages
+      default CSI codes
+      default phase codes
+      default assemblies
+      default items
+      default models
+      default rates
+      default auto-save
+      default reports
+      Billing Email Templates
+      Email Templates
+      Default Report Fonts
+      Default Reports
+      Default Client Widgets
+      Default Tenant Widgets
+      Language
+      Startup Mode (last page visited, dashboard, other)
+      Default User Map Location
+    </form>
+  </div>
+</div>

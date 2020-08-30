@@ -1,0 +1,101 @@
+<mat-accordion>
+  <mat-expansion-panel [disabled]="false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <i class="fal fa-dollar-sign"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        USERS
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list fxLayout="column" fxLayoutAlign="center center">
+      <mat-list-item routerLink="/team/estimating" routerLinkActive="active" class="pointer"> Estimates
+      </mat-list-item>
+      <mat-list-item routerLink="/team/projects" routerLinkActive="active" class="pointer">Projects
+      </mat-list-item>
+      <mat-list-item routerLink="/team/items" routerLinkActive="active" class="pointer">Item Database
+      </mat-list-item>
+      <mat-list-item routerLink="/team/assemblies" routerLinkActive="active" class="pointer">Assemblies Catalog
+      </mat-list-item>
+      <mat-list-item routerLink="/team/rates" routerLinkActive="active" class="pointer">Labor Rates
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <i class="fal fa-file-chart-line"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        TENANTS
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+      <mat-list-item routerLink="/team/reports" routerLinkActive="active" class="pointer">Manage Reports
+      </mat-list-item>
+      <mat-list-item routerLink="/team/reports/variance" routerLinkActive="active" class="pointer">Variance Builder
+      </mat-list-item>
+      <mat-list-item routerLink="/team/reports/trends" routerLinkActive="active" class="pointer">Cost Trends
+      </mat-list-item>
+      <mat-list-item routerLink="/team/reports/custom" routerLinkActive="active" class="pointer">Custom Reports
+      </mat-list-item>
+      <mat-list-item routerLink="/team/reports/preferences" routerLinkActive="active" class="pointer">Preferences
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <i class="fal fa-file-chart-line"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        REPORTING
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+      <mat-list-item routerLink="/team/reports" routerLinkActive="active" class="pointer">Manage Reports
+      </mat-list-item>
+      <mat-list-item routerLink="/team/reports/variance" routerLinkActive="active" class="pointer">Variance Builder
+      </mat-list-item>
+      <mat-list-item routerLink="/team/reports/trends" routerLinkActive="active" class="pointer">Cost Trends
+      </mat-list-item>
+      <mat-list-item routerLink="/team/reports/custom" routerLinkActive="active" class="pointer">Custom Reports
+      </mat-list-item>
+      <mat-list-item routerLink="/team/reports/preferences" routerLinkActive="active" class="pointer">Preferences
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <i class="fal fa-chart-line"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ANALTYICS
+      </mat-panel-title>
+
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+      <mat-list-item routerLink="/team/analytics/cost-indices" routerLinkActive="active" class="pointer">Cost Indices
+      </mat-list-item>
+      <mat-list-item routerLink="/team/analytics/historical" routerLinkActive="active" class="pointer">Historical
+        Costs
+      </mat-list-item>
+      <mat-list-item routerLink="/team/analytics/modeling" routerLinkActive="active" class="pointer">Cost Modeling
+      </mat-list-item>
+      <mat-list-item routerLink="/team/analytics/benchmark" routerLinkActive="active" class="pointer">Benchmarking
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <i class="fal fa-folders"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+        SETTINGS
+      </mat-panel-title>
+
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+      <mat-list-item routerLink="/team/files" routerLinkActive="active" class="pointer">Manage Files
+      </mat-list-item>
+      <mat-list-item routerLink="/team/files/upload" routerLinkActive="active" class="pointer">Upload Files
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-expansion-panel>
+</mat-accordion>

@@ -28,6 +28,7 @@ import { IconMenuComponent } from './shared/nav/icon-menu/icon-menu.component';
 import { SidenavComponent } from './shared/nav/sidenav/sidenav.component';
 import { CoursesModule } from './features/courses/courses.module';
 import { LessonsModule } from './features/lessons/lessons.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { LessonsModule } from './features/lessons/lessons.module';
     HomeModule,
     CoursesModule,
     LessonsModule,
+    AdminModule
 
   ],
   providers: [

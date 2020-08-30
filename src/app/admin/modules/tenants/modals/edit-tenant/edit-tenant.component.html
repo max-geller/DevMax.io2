@@ -1,0 +1,130 @@
+<div class="modal-layout" fxLayout="column">
+  <h3>EDIT TENANTS</h3>
+  <mat-divider></mat-divider>
+
+  <div class="modal-container">
+    <mat-vertical-stepper #stepper>
+      <form>
+        <mat-step>
+          <ng-template matStepLabel>BASIC INFORMATION</ng-template>
+          <div fxLayout="row wrap">
+            <div fxLayout="column">
+              <mat-form-field class="md-field">
+                <mat-label>First Name</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Last Name</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Display Name</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div fxLayout="column">
+              <mat-form-field class="md-field">
+                <mat-label>Email</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Role</mat-label>
+                <mat-select>
+                  <option value="volvo">Global Admin</option>
+                  <option value="volvo">Estibase Admin</option>
+                  <option value="volvo">Tenant Admin</option>
+                  <option value="saab">Tenant Manager</option>
+                  <option value="saab">Client Manager</option>
+                  <option value="saab">Client Viewer</option>
+                  <option value="mercedes">Investor</option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field class="md-field">
+                <mat-label>Tenant</mat-label>
+                <mat-select>
+                  <option value="hci">Hollins Consulting, Inc.</option>
+                  <option value="sutro">Sutro Partners, LLC.</option>
+                  <option value="xyz">XYZ, Inc. (Demo)</option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <mat-form-field class="lg-field">
+            <mat-label>Teams</mat-label>
+            <mat-select multiple>
+              <mat-option>SFO Terminal 3 West</mat-option>
+              <mat-option>Golden Gate Tennis Center</mat-option>
+              <mat-option>Rossi Pool Renovation</mat-option>
+              <mat-option>Long-Baseline Neutrino Facility</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div>
+            <button mat-raised-button color="primary" matStepperNext>Next</button>
+          </div>
+        </mat-step>
+        <mat-step>
+          <form>
+            <ng-template matStepLabel>CONTACT INFORMATION</ng-template>
+            <mat-form-field class="md-field">
+              <mat-label>Company</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="md-field">
+              <mat-label>Title</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="md-field">
+              <mat-label>Location</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="md-field">
+              <mat-label>Department</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="md-field">
+              <mat-label>Work Email</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="md-field">
+              <mat-label>Mobile Phone</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="md-field">
+              <mat-label>Work Phone</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <div>
+              <button mat-raised-button matStepperPrevious>Back</button>
+              <button mat-raised-button color="primary" matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>ACCOUNT SETTINGS</ng-template>
+          <div fxLayout="column">
+            <mat-form-field class="md-field">
+              <mat-label>Theme</mat-label>
+              <mat-select>
+                <option value="volvo">Hayes Valley</option>
+                <option value="volvo">Presidio</option>
+                <option value="saab">Dogpatch</option>
+                <option value="volvo">Golden Gate</option>
+                <option value="saab">Sutro Red</option>
+                <option value="saab">Potrero</option>
+              </mat-select>
+            </mat-form-field>
+            <mat-checkbox>Send Welcome Email</mat-checkbox>
+            <mat-checkbox>Verifiy Account</mat-checkbox>
+            <mat-checkbox>First-Use Tutorial</mat-checkbox>
+
+          </div>
+          <mat-dialog-actions>
+            <button mat-raised-button matStepperPrevious>Back</button>
+            <button mat-raised-button color="primary" matStepperNext>Save</button>
+            <button class="mat-raised-button" (click)="close()">Close</button>
+          </mat-dialog-actions>
+        </mat-step>
+      </form>
+    </mat-vertical-stepper>
+  </div>
+</div>
