@@ -3,30 +3,31 @@
 
 
 
-    <button mat-icon-button routerLink="/admin" *ngIf="admin">
+    <button mat-icon-button routerLink="/admin" *ngIf="user$">
       <i class="fal fa-cog"></i>
     </button>
 
-    <button mat-icon-button *ngIf="admin">
+    <button mat-icon-button *ngIf="user$">
       <i class="fal fa-heart"></i>
     </button>
 
 
-    <button mat-icon-button [matMenuTriggerFor]="notificationsMenu" *ngIf="admin">
+    <button mat-icon-button *ngIf="user$">
       <i class="fal fa-bell"></i><span class="icon-badge">8</span>
     </button>
 
-    <button mat-icon-button [matMenuTriggerFor]="tasksMenu" *ngIf="admin">
+    <button mat-icon-button *ngIf="user$">
       <i class="fal fa-check"></i><span class="icon-badge">11</span>
     </button>
 
-    <button mat-icon-button [matMenuTriggerFor]="teamMenu" *ngIf="admin">
+    <button mat-icon-button [matMenuTriggerFor]="teamMenu" *ngIf="user$">
       <img class="team-avatar"
         src="https://firebasestorage.googleapis.com/v0/b/estibase-dev.appspot.com/o/people%2Fcat.jpg?alt=media&token=11b557b7-2962-4361-98aa-a73d7e5377d8"
         min-width="36px" height="36px">
     </button>
-    <mat-list-item style="font-size: 12px !important;" routerLink="/sessions/login">LOGIN</mat-list-item>
-    <mat-list-item style="font-size: 12px !important;" routerLink="/sessions/signup">SIGNUP</mat-list-item>
+    <mat-list-item style="font-size: 12px !important;" routerLink="/sessions/login" *ngIf="user$ == null" >LOGIN
+    </mat-list-item>
+    <mat-list-item style="font-size: 12px !important;" routerLink="/sessions/signup" *ngIf="user$ == null">SIGNUP</mat-list-item>
   </mat-nav-list>
 </div>
 
@@ -50,15 +51,4 @@
     <i class="far fa-cogs"></i>&nbsp; &nbsp; Tenant Settings</button>
   <button mat-menu-item routerLink="tenants/billing" routerLinkActive="active" class="pointer">
     <i class="far fa-credit-card"></i>&nbsp; &nbsp; Payments & Billing</button>
-
-
-</mat-menu>
-
-
-<mat-menu #notificationsMenu="matMenu" xPosition="before">
-
-</mat-menu>
-
-<mat-menu #tasksMenu="matMenu" xPosition="before">
-
 </mat-menu>

@@ -18,13 +18,14 @@
       <i class="fas fa-star-half" style="color: yellow !important;font-weight:100;"></i> 4.7 (198 Reviews)
     </div>
     <p style="font-style:italic;color: white;">{{course.hrs}}, 13 Sections </p>
-    <div class="instructor-container" fxLayout="row" fxLayoutAlign="start center">
+    <div class="instructor-container" fxLayout="row" fxLayoutAlign="center center">
       <button mat-icon-button>
         <img class="team-avatar"
           src="https://firebasestorage.googleapis.com/v0/b/estibase-dev.appspot.com/o/people%2Fcat.jpg?alt=media&token=11b557b7-2962-4361-98aa-a73d7e5377d8"
           min-width="36px" height="36px">
       </button>
-      <p style="font-style:italic">{{course.instructor}} </p>
+      <span style="width:15px;"></span>
+      <p style="font-style:italic;line-height: 36px;margin:0px;">{{course.instructor}} </p>
 
     </div>
     <div fxLayout="row">
@@ -54,7 +55,8 @@
       <app-featured-review></app-featured-review>
 
       <app-instructor-bio></app-instructor-bio>
-
+      <img
+        src="https://assets.website-files.com/5d9373c8dbd2df27409ba653/5eb0031d153c28391d6ce2f9_checkout-badge-1.svg">
       <app-student-feedback></app-student-feedback>
     </div>
 
