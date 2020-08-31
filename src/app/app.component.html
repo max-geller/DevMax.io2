@@ -1,8 +1,8 @@
-<ngx-spinner size="medium" color="#FFFFFF" type="line-scale" [fullScreen]="false">
+<ngx-spinner size="medium" color="#FFFFFF" size="large" type="ball-scale-pulse" [fullScreen]="false">
   <p style="color: white;">LOADING...</p>
 </ngx-spinner>
 
-<div class="home-wrapper">
+<div id='preload'>
   <div class="app-navbar" fxLayout="row" style="padding-left: 20px;padding-right:20px;">
     <div fxLayout="row" fxLayoutAlign="start center" fxFlex>
       <button mat-icon-button fxShow="true" fxHide fxShow.lt-sm>
@@ -33,7 +33,6 @@
           <i class="fal fa-search" style="margin-top: 6px;"></i>
         </button>
       </mat-nav-list>
-
     </div>
     <div fxLayout="column" fxLayoutAlign="center end" fxFlex>
       <app-icon-menu></app-icon-menu>
@@ -41,10 +40,11 @@
   </div>
 
 
-  <div id="preload" class="main-container" fxLayout="column" style="flex-grow: 1;width: 100vw;">
+  <div class="home-wrapper" fxFlex>
+    <div id="preload" class="main-container" fxLayout="column" style="flex-grow: 1;width: 100vw;">
+      <router-outlet></router-outlet>
 
-    <router-outlet></router-outlet>
-
-    <app-footer></app-footer>
+      <app-footer></app-footer>
+    </div>
   </div>
 </div>
