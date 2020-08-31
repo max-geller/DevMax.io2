@@ -11,7 +11,6 @@ import { StatsComponent } from './components/stats/stats.component';
 import { CtaComponent } from './components/cta/cta.component';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './components/banner/banner.component';
-
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 @NgModule({
@@ -24,12 +23,13 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
         StatsComponent,
         CtaComponent,
         BannerComponent,
-        NewsletterComponent
+        NewsletterComponent,
     ],
     imports: [
         CommonModule,
         CoreModule,
         SharedModule,
-    ]
+    ],
+
 })
 export class HomeModule { }

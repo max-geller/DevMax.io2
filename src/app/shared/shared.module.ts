@@ -11,6 +11,7 @@ import * as echarts from 'echarts';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { ParallaxDirective } from './directives/parallax.directive';
 
 @NgModule({
   imports: [
@@ -26,7 +27,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     NgxPageScrollModule
   ],
   declarations: [
-    ConfirmDeleteComponent
+    ConfirmDeleteComponent,
   ],
   exports: [
     CommonModule,
