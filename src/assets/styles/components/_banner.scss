@@ -35,15 +35,11 @@
 }
 
 .banner-container {
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 40vh;
-
-
-
 
   h1 {
     font-size: 4.5em;
@@ -72,7 +68,7 @@
   }
 }
 
-.mat-stroked-button {
+.mat-outline-button {
   padding: 0 1.15em;
   border-color: white;
   margin: 0 1.25em;
