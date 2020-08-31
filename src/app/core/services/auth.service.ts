@@ -35,6 +35,7 @@ export class AuthService {
     );
 
   }
+  
   isLoggedIn() {
     if (this.user$ == null) {
       return false;
@@ -46,6 +47,7 @@ export class AuthService {
   userStatus() {
     return this.afAuth.authState;
   }
+
   // Update User Data to Firestore Collection after Login*
   private updateUserData(user) {
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(
