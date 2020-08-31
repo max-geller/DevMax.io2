@@ -40,6 +40,8 @@ import { SessionsModule } from './sessions/sessions.module';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { AngularFireFunctions, AngularFireFunctionsModule } from '@angular/fire/functions';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
     PrivacyComponent,
     TermsComponent,
     ProfileComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,6 +74,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
+    AngularFireFunctionsModule,
     AngularFireStorageModule,
     environment.production ?
       HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 100 }) : [],

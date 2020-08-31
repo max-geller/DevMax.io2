@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "devmax",
+      "public": "dist/devmax",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

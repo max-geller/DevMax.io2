@@ -14,6 +14,7 @@ import { NotFoundComponent } from './shared/components/pages/not-found/not-found
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { TermsComponent } from './pages/terms/terms.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 
 const routes: Routes = [
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent
   },
   {
     path: 'articles',

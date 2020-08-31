@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable, of } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { switchMap, first } from 'rxjs/operators';
 import { User } from '../models/user.model';
 import { DOCUMENT } from '@angular/common';
 
@@ -35,7 +35,11 @@ export class AuthService {
     );
 
   }
-  
+
+  getUser() {
+    return this.afAuth.authState.pipe(first()).toPromise();
+  }
+
   isLoggedIn() {
     if (this.user$ == null) {
       return false;

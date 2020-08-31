@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "devmax-66f54": {
+      "hosting": {
+        "devmax": [
+          "devmax-66f54"
+        ]
+      }
+    }
+  }
+}
