@@ -14,7 +14,7 @@ export interface User {
     roles?: string;
 
     email?: '',
-    role?: '',
+    role?: string;
     tenant?: '',
     teams?: '',
     company?: '',
