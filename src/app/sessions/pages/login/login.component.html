@@ -1,6 +1,7 @@
-<div class="page-layout" fxLayout="column" fxLayoutAlign="center center">
-  <div class="mat-card-title" style="margin-bottom: 20px;">Let's get you logged in...</div>
-  <form class="form-container" #loginForm="ngForm" fxLayout="column" fxLayoutAlign="center center">
+<div id="preload" class="page-layout" fxLayout="column" fxLayoutAlign="start center" style="min-height: 500px;display:flex">
+  <div class="mat-card-title">Let's get you logged in...</div>
+  <form class="form-container" #loginForm="ngForm" fxLayout="column" fxLayoutAlign="start center"
+    >
     <mat-form-field class="ml-field">
       <mat-label>Email</mat-label>
       <input matInput type="email" id="inputEmail" [(ngModel)]="email" name="Email" placeholder="Email" #emailInput />

@@ -1,4 +1,4 @@
-<div class="page-layout" fxLayout="column">
+<div  id="preload" class="page-layout" fxLayout="column">
   <h1>COURSES:</h1>
   <mat-divider></mat-divider>
   <div class="main-container" fxLayout="column">
@@ -15,7 +15,7 @@
         </mat-button-toggle-group>
 
 
-        <div class="course-item" fxlayout="row" style="display: flex; margin:20px;;"
+        <div id="preload" class="course-item" fxlayout="row" style="display: flex; margin:20px;;"
           routerLink="/courses/course/{{course.id}}" *ngFor="let course of courses$ | async">
           <div class="course-image" fxLayout="column">
             <img src="{{course.previewURL}}" class="responsive" height="160px" width="260px">
