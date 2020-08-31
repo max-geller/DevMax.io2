@@ -44,6 +44,10 @@ export class AuthService {
       return true;
     }
   }
+
+  userStatus() {
+    return this.afAuth.authState;
+  }
   // Update User Data to Firestore Collection after Login*
   private updateUserData(user) {
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(
@@ -86,6 +90,7 @@ export class AuthService {
   // Sign Out
   signOut() {
     this.afAuth.auth.signOut().then(() => {
+      
       this.isAuthenticated = false;
       this.document.location.href = 'https://www.devmax.io';
     });

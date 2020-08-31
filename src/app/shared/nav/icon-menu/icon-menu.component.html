@@ -3,36 +3,39 @@
 
 
 
-    <button mat-icon-button routerLink="/admin" *ngIf="user$">
+    <button mat-icon-button routerLink="/admin" *ngIf="(user$ | async)?.uid">
       <i class="fal fa-cog"></i>
     </button>
 
-    <button mat-icon-button *ngIf="user$">
+    <button mat-icon-button *ngIf="(user$ | async)?.uid">
       <i class="fal fa-heart"></i>
     </button>
 
 
-    <button mat-icon-button *ngIf="user$">
+    <button mat-icon-button *ngIf="(user$ | async)?.uid">
       <i class="fal fa-bell"></i><span class="icon-badge">8</span>
     </button>
 
-    <button mat-icon-button *ngIf="user$">
+    <button mat-icon-button *ngIf="(user$ | async)?.uid">
       <i class="fal fa-check"></i><span class="icon-badge">11</span>
     </button>
 
-    <button mat-icon-button [matMenuTriggerFor]="teamMenu" *ngIf="user$">
+    <button mat-icon-button [matMenuTriggerFor]="teamMenu" *ngIf="(user$ | async)?.uid">
       <img class="team-avatar"
         src="https://firebasestorage.googleapis.com/v0/b/estibase-dev.appspot.com/o/people%2Fcat.jpg?alt=media&token=11b557b7-2962-4361-98aa-a73d7e5377d8"
         min-width="36px" height="36px">
     </button>
-    <mat-list-item style="font-size: 12px !important;" routerLink="/sessions/login" *ngIf="user$ == null" >LOGIN
+    <mat-list-item style="font-size: 12px !important;" routerLink="/sessions/login"
+      *ngIf="(user$ | async)?.uid == null">LOGIN
     </mat-list-item>
-    <mat-list-item style="font-size: 12px !important;" routerLink="/sessions/signup" *ngIf="user$ == null">SIGNUP</mat-list-item>
+    <mat-list-item style="font-size: 12px !important;" routerLink="/sessions/signup"
+      *ngIf="(user$ | async)?.uid == null">SIGNUP
+    </mat-list-item>
   </mat-nav-list>
 </div>
 
 <mat-menu #teamMenu="matMenu" xPosition="before">
-  <button mat-menu-item routerLink="/team/profile">
+  <button mat-menu-item routerLink="/profile">
     <i class="fal fa-user"></i>&nbsp; &nbsp; Profile</button>
   <button mat-menu-item (click)="openSlack()">
     <i class="fab fa-slack-hash"></i>&nbsp; &nbsp; Slack Channel</button>

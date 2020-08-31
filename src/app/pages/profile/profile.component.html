@@ -1,4 +1,73 @@
 <div class="page-layout" fxLayout="column">
-  <p>profile works!</p>
-  <mat-divider></mat-divider>
+  <h1>MY PROFILE</h1>
+  <mat-divider style="margin-bottom: 0px !important;"></mat-divider>
+  <div class="actions-container">
+    <button class="action-button" mat-raised-button color="primary" routerLink='/team/clients'>Change Password</button>
+    <button class="action-button" mat-raised-button color="primary" routerLink='/team/clients'>Verify Email</button>
+    <button class="action-button" mat-raised-button color="primary" routerLink='/team/clients'>Two-Factor</button>
+  </div>
+
+  <mat-divider style="margin-bottom: 10px;"></mat-divider>
+  <div class="dashboard-container" *ngIf="auth.user$ | async as user">
+    <mat-card class="card-sq-sm">
+      <mat-card-title>PROFILE SUMMARY</mat-card-title>
+      <div class="name" fxLayout="column" fxLayoutAlign="start start">
+        <mat-list-item>{{ user.firstName }}</mat-list-item>
+        <mat-list-item>{{ user.lastName }}</mat-list-item>
+        <mat-list-item>{{ user.uid }}</mat-list-item>
+        <mat-list-item>{{ user.department }}</mat-list-item>
+        <mat-list-item>{{ user.lastLogin }}</mat-list-item>
+        <mat-list-item>{{ user.title }}</mat-list-item>
+        <mat-list-item>{{ user.workPhone }}</mat-list-item>
+        <mat-list-item>{{ user.mobilePhone }}</mat-list-item>
+        <mat-list-item>{{ user.workEmail }}</mat-list-item>
+      </div>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Upload</button>
+        <button mat-raised-button color="accent">Delete</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card-wide">
+      <mat-card-header>
+        <mat-card-title>Account Settings</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field>
+          <mat-label>Timezone</mat-label>
+          <mat-select>
+            <option value="pst">Pacific Standard Time</option>
+          </mat-select>
+        </mat-form-field> <br>
+        <mat-form-field>
+          <mat-label>Start Page</mat-label>
+          <mat-select>
+            <option value="dashboard">Dashboard</option>
+          </mat-select>
+        </mat-form-field><br>
+        <mat-form-field>
+          <mat-label>Currency</mat-label>
+          <mat-select>
+            <option value="usd">USD ($)</option>
+          </mat-select>
+        </mat-form-field><br>
+        <mat-form-field>
+          <mat-label>Units</mat-label>
+          <mat-select>
+            <option value="imperial">Imperial</option>
+            <option value="metric">Metric</option>
+          </mat-select>
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card-sq-sm">
+      <mat-card-title>ACCOUNT SUPPORT</mat-card-title>
+      <mat-card-content>
+        is this a list container?
+      </mat-card-content>
+
+    </mat-card>
+
+  </div>
 </div>

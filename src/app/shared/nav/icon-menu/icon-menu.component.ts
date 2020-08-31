@@ -1,3 +1,4 @@
+import { AuthService } from './../../../core/services/auth.service';
 import { switchMap } from 'rxjs/operators';
 import { User } from './../../../core/models/user.model';
 import { Component, Inject } from '@angular/core';
@@ -11,45 +12,19 @@ import { DOCUMENT } from '@angular/common';
   templateUrl: './icon-menu.component.html',
 })
 export class IconMenuComponent {
-  user$: Observable<User>;
+  user$: Observable<firebase.User>;
   admin: string;
   isAuthenticated: boolean;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    private auth: AngularFireAuth,
+    private afAuth: AngularFireAuth,
+    private authService: AuthService,
     private afs: AngularFirestore,
   ) {
-
-    // Return User's Auth State:
-    this.user$ = auth.authState.pipe(
-      switchMap(user => {
-        // Logged in
-        if (user) {
-          return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
-        } else {
-          // Logged out
-          return of(null);
-        }
-      })
-    );
+    this.user$ = this.authService.userStatus();
 
   }
-  isLoggedIn() {
-    if (this.user$ == null) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-  signOut() {
-    this.auth.auth.signOut().then(() => {
-      this.isAuthenticated = false;
-      this.document.location.href = 'https://www.devmax.io';
-    });
-
-  }
-
 
   openDocumentation() {
     window.open("https://docs.devmax.io", "_blank");
@@ -58,4 +33,11 @@ export class IconMenuComponent {
   openSlack() {
     window.open("https://devmax.slack.com", "_blank");
   }
+  signOut() {
+    this.authService.signOut()
+    //      this.document.location.href = 'https://www.devmax.io';
+  };
+
+
 }
+
