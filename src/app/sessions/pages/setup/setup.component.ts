@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'app-setup',
   templateUrl: './setup.component.html',
 })
-export class SetupComponent implements OnInit {
+export class SetupComponent {
+  email: string;
+  password: string;
+  constructor(public auth: AuthService,) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  emailSignUp() {
+    this.auth.emailSignUp(this.email, this.password);
+    this.email = '';
+    this.password = '';
   }
 
 }

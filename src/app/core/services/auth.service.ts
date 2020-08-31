@@ -3,11 +3,9 @@ import { Router } from '@angular/router';
 
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
-
 import { Observable, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { User } from '../models/user.model';
-
 import { DOCUMENT } from '@angular/common';
 
 @Injectable()
@@ -87,10 +85,23 @@ export class AuthService {
       });
   }
 
+  emailSignUp(email: string, password: string) {
+    this.afAuth.auth
+      .createUserWithEmailAndPassword(email, password)
+      .then(res => {
+        this.isAuthenticated = true;
+      })
+
+      .then(() => {
+        // Redirect to Account Setup
+        this.router.navigate(['/sessions/setup']);
+      })
+  }
+
   // Sign Out
   signOut() {
     this.afAuth.auth.signOut().then(() => {
-      
+
       this.isAuthenticated = false;
       this.document.location.href = 'https://www.devmax.io';
     });

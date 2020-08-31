@@ -1,1 +1,19 @@
-<p>setup works!</p>
+<div class="page-layout" fxLayout="column">
+  <form class="form-container" #loginForm="ngForm" fxLayout="column" fxLayoutAlign="center center">
+    <mat-form-field class="ml-field">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" id="inputEmail" [(ngModel)]="email" name="Email" placeholder="Email" #emailInput />
+    </mat-form-field>
+    <mat-form-field class="ml-field">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" id="inputPassword" [(ngModel)]="password" name="Password" placeholder="Password"
+        #passwordInput />
+    </mat-form-field>
+    <mat-card-actions>
+      <div fxLayout="row" fxLayoutAlign="space-evenly center">
+        <button mat-raised-button color="primary" type="submit" (click)="emailSignUp()"> Signup </button>
+        <button mat-raised-button> Reset Password </button>
+      </div>
+    </mat-card-actions>
+    </form>
+</div>
