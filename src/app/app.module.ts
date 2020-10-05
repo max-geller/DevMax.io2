@@ -43,6 +43,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import {  AngularFireFunctionsModule } from '@angular/fire/functions';
 import { ParallaxDirective } from './shared/directives/parallax.directive';
+import { NavbarComponent } from './shared/nav/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,8 @@ import { ParallaxDirective } from './shared/directives/parallax.directive';
     TermsComponent,
     ProfileComponent,
     CheckoutComponent,
+    NavbarComponent,
+    IconMenuComponent,
     ParallaxDirective
   ],
   imports: [

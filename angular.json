@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "devmax"
+  "defaultProject": "devmax",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,32 +1,31 @@
 <div class="page-container">
-  <div id="preload" class="banner-container parallax" fxLayoutAlign="center center">
-    <div class="banner-text" style="margin-top: 100px !important">
-      <h1>LEARN ENGINEERING & WEB DEVELOPMENT</h1>
-      <h2>
-        Learn Modern Engineering & Web Development with DevMax.io!
-      </h2>
+  <h1>LEARN ENGINEERING & WEB DEVELOPMENT</h1>
+  <h2>
+    Learn Modern Engineering & Web Development with DevMax.io!
+  </h2>
 
-      <button mat-stroked-button pageScroll (click)="scrollInsideBasic()" id="startNestedScrollingButton">
-        Become a Pro Member
-      </button>
-      <button mat-stroked-button pageScroll (click)="scrollInsideBasic()" id="startNestedScrollingButton2">
-        👋 Browse Courses
-      </button>
-
-    </div>
-  </div>
-
-
+  <button
+    mat-stroked-button
+    pageScroll
+    (click)="scrollInsideBasic()"
+    id="startNestedScrollingButton"
+  >
+    Become a Pro Member
+  </button>
+  <button
+    mat-stroked-button
+    pageScroll
+    (click)="scrollInsideBasic()"
+    id="startNestedScrollingButton2"
+  >
+    👋 Browse Courses
+  </button>
 </div>
-<app-stats class="static"></app-stats>
-<app-browse-tags class="static"></app-browse-tags>
+
 <app-newsletter class="static"></app-newsletter>
 <app-feed></app-feed>
-<app-browse-courses id="basicScrollTarget" #basicScrollTartget></app-browse-courses>
+<app-browse-courses
+  id="basicScrollTarget"
+  #basicScrollTartget
+></app-browse-courses>
 <app-reviews></app-reviews>
-
-<app-newsletter></app-newsletter>
-<app-feed></app-feed>
-<app-browse-courses id="basicScrollTarget" #basicScrollTartget></app-browse-courses>
-<app-reviews></app-reviews>
-<app-cta></app-cta>
